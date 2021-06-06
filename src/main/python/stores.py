@@ -69,6 +69,7 @@ class StoreInformation:
                 self.stores = json.load(file)
 
     def write_store_information(self):
+        dir_path = os.path.dirname(os.path.realpath(__file__))
         with open(dir_path + '/stores.json', 'w') as file:
             json.dump(self.stores,file)
 

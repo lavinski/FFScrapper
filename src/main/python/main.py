@@ -39,7 +39,7 @@ class App(QWidget):
 
     def __init__(self):
         super().__init__()
-        self.title = 'PyQt5 file dialogs - pythonspot.com'
+        self.title = "FF Produktų analizė"
         self.left = 10
         self.top = 10
         self.width = 2000
@@ -82,7 +82,6 @@ class App(QWidget):
         # self.saveFileDialog()
         
         super().__init__()
-        self.setWindowTitle("Nested Layouts Example")
         # Create an outer layout
         outerUpperLayout = QGridLayout()
         

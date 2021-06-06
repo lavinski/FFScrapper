@@ -1,8 +1,0 @@
-.
-*.xls
-*.csv
-*.xlsx
-build/
-dist/
-old
-mxx

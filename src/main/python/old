@@ -1,0 +1,49 @@
+def scrape_category_page_with_html(start_url):
+    # start from first page
+
+    # assumption that ff will not have more than 1000 category pages
+    for page_number in range(1, 1000):
+        url = "{}?page={}".format(start_url, page_number)
+
+        print("\nRequesting the page {} with url {}".format(page_number, url))
+        page = requests.get(url)
+
+        # ff redirects back to the first page if the page counter is creater than the total
+        # amount of pages.
+        # so we can assume all pages have been scrapped
+        if page.url == start_url:
+            break
+
+        print("Scrapping {} page. {}".format(page_number, page.url))
+
+        f = open("response.html", "a")
+        f.write(page.text)
+        f.close()
+
+        soup = BeautifulSoup(page.text, 'html.parser')
+
+        # TESTING
+        # with open("response.html") as fp:
+        #     soup = BeautifulSoup(fp, 'html.parser')
+
+        # results = soup.find(attrs={"data-testId":"productArea"})
+        results = soup.find("div", {"data-testid":"productArea"})
+
+        products = results.find_all('li', {"data-testid":"productCard"})
+
+        for product in products:
+            a_link = product.find("a")
+
+            # print(a_link["href"])
+
+            # TODO: check if href is set
+            store_id = a_link["href"].split("storeid=")[-1]
+            item_id = a_link["href"].split(".aspx")[0].split("-")[-1]
+
+            if item_id in product_to_ff_status_map:
+                if store_id in store_ids:
+                    product_to_ff_status_map[item_id] = statuses["active"]
+                else:
+                    product_to_ff_status_map[item_id] = statuses["competitor_selling"]
+
+                print("     Product {} found. Status updated to {}.".format(item_id, product_to_ff_status_map[item_id]))

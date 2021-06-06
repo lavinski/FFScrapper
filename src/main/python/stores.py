@@ -2,6 +2,7 @@ import json
 import requests
 import re
 import os 
+import os.path
 
 class StoreInformation:
     # mapping from store_id to location
@@ -63,8 +64,9 @@ class StoreInformation:
 
     def load_store_information(self):
         dir_path = os.path.dirname(os.path.realpath(__file__))
-        with open(dir_path + '/stores.json', 'r') as file:
-            self.stores = json.load(file)
+        if os.path.exists('/stores.json'):
+            with open(dir_path + '/stores.json', 'r') as file:
+                self.stores = json.load(file)
 
     def write_store_information(self):
         with open(dir_path + '/stores.json', 'w') as file:

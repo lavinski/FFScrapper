@@ -3,6 +3,7 @@ import os
 from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QFileDialog
 from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import QObject, QThread, pyqtSignal
+from datetime import date
 
 from scrapper import Scrapper
 
@@ -28,13 +29,19 @@ class Worker(QObject):
     finished = pyqtSignal()
     progress = pyqtSignal(int)
 
-    def __init__(self, scrapper):
+    def __init__(self, scrapper, message_function):
         super().__init__()
         self.scrapper = scrapper
+        self.message_function = message_function
 
     def run(self):
-        self.scrapper.scrape()
-
+        try:
+            self.scrapper.scrape()
+        except:
+            with open("log.txt", "a") as file_object:
+                # Append 'hello' at the end of file
+                file_object.write(str(date.today())+ "Klaida:" + str(sys.exc_info()))
+        
 class App(QWidget):
 
     def __init__(self):
@@ -265,7 +272,7 @@ class App(QWidget):
                             self.updateProgressBar)        
         
         self.thread = QThread()
-        self.worker = Worker(scrapper)
+        self.worker = Worker(scrapper, self.displayMessage)
         self.worker.moveToThread(self.thread)
         self.thread.started.connect(self.worker.run)
         self.worker.finished.connect(self.thread.quit)

@@ -65,15 +65,35 @@ class Scrapper():
 
         # load ff file to determine if product ids that are in
         # product file are child or parent
-        with open(self.products_from_ff_table) as csvfile:
-            ff_data = csv.reader(csvfile,delimiter=";")
-            for row in ff_data:
-                # if child id exists
-                if row[1]:
-                    if row[1].isdigit():
-                        self.ff_child_to_parent_mapping[str(row[1])] = str(row[0])
-                else:
-                    self.ff_child_to_parent_mapping[str(row[0])] = str(row[0])
+
+        import os.path
+        extension = os.path.splitext(self.products_from_ff_table)[1]
+
+        if extension[1] == ".csv":
+            with open(self.products_from_ff_table) as csvfile:
+                ff_data = csv.reader(csvfile,delimiter=";")
+                for row in ff_data:
+                    # if child id exists
+                    if row[1]:
+                        if row[1].isdigit():
+                            self.ff_child_to_parent_mapping[str(row[1])] = str(row[0])
+                    else:
+                        self.ff_child_to_parent_mapping[str(row[0])] = str(row[0])
+        elif extension[1] == ".xls":
+            # load product ids
+            xls = pd.ExcelFile(self.products_from_ff_table) 
+            sheet = xls.parse(0)
+
+            for index in sheet.index:
+                    # if child id exists
+
+                    child_id = sheet["Child"][index]
+                    item_id = sheet["Item id"][index]
+                    if child_id:
+                        if child_id.isdigit():
+                            self.ff_child_to_parent_mapping[str(child_id)] = str(parent_id)
+                    else:
+                        self.ff_child_to_parent_mapping[str(parent_id)] = str(parent_id)
 
         # load product ids
         xls = pd.ExcelFile(self.products_table) 

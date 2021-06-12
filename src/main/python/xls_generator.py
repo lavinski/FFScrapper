@@ -17,7 +17,7 @@ def export_products_to_xlsx(product_info, file_path_name, add_images):
     money = workbook.add_format({'num_format': '$#,##0'})
 
     # Write some data headers.
-    headers = ['Pav.','Sku','FF prekės ID','Statusas','StoreId','Kaina','Savikaina','Valiuta','Šalis','Url']
+    headers = ['Pav.','Sku','FF prekės ID','Statusas','StoreId','Kaina','Savikaina','Valiuta','NAV kolekcija','FF kolekcija','Galutinis likutis','FF pradinė kaina','FF nuolaida','Pardavimo kaina','Šalis','Url']
 
     for index,header in enumerate(headers):
         worksheet.write(0, index, header, bold)
@@ -51,8 +51,15 @@ def export_products_to_xlsx(product_info, file_path_name, add_images):
         worksheet.write(row, 5, product["price"])
         worksheet.write(row, 6, product["lowest_price"])
         worksheet.write(row, 7, product["currency"])
-        worksheet.write(row, 8, country_id)
-        worksheet.write(row, 9, product["url"], cell_format)
+        worksheet.write(row, 8, product["nav_collection"])
+        worksheet.write(row, 9, product["ff_season"])
+        worksheet.write(row, 10, product["total_quantity"])
+        worksheet.write(row, 11, product["ff_base_price"])
+        worksheet.write(row, 12, product["ff_base_discount"])
+        worksheet.write(row, 13, product["ff_sale_price"])
+
+        worksheet.write(row, 14, country_id)
+        worksheet.write(row, 15, product["url"], cell_format)
         row += 1
 
 
@@ -70,11 +77,11 @@ def export_products_to_xlsx(product_info, file_path_name, add_images):
 
     worksheet.set_column(0, 0, 15)
     worksheet.set_column(1, 1, 30)
-    worksheet.set_column(2, 11, 15)
+    worksheet.set_column(2, len(headers)+5, 15)
     
     workbook.close()
 
-def export_product_sizes_to_xlsx(product_info,file_path_name):
+def export_product_sizes_to_xlsx(product_info,file_path_name,stores):
     # get the sizes that are possible
     sizes = set()
     products_with_sizes = {}
@@ -97,11 +104,17 @@ def export_product_sizes_to_xlsx(product_info,file_path_name):
     # Add a bold format to use to highlight cells.
     bold = workbook.add_format({'bold': True})
 
+    bold = workbook.add_format({'bold': True})
+
     # Write some data headers.
-    worksheet.write('A1', 'FF prekės ID', bold)
+    worksheet.write('A1', 'SKU', bold)
+    worksheet.write('B1', 'FF prekės ID', bold)
+    worksheet.write('C1', 'Galutinis likutis', bold)
+    worksheet.write('D1', 'Konkurentų likutis', bold)
 
     # Add a number format for cells with money.
     money = workbook.add_format({'num_format': '$#,##0'})
+    storeIDColor = workbook.add_format({'bg_color': '#90EE90'})
 
     # Size format
     size_format = workbook.add_format({'bold': 1, 'align': 'center',
@@ -109,7 +122,7 @@ def export_product_sizes_to_xlsx(product_info,file_path_name):
 
     # Add sizes
     for size, index in sizes_index_map.items():
-        column = index*2+1
+        column = index*2+4
         worksheet.merge_range(0,column,0,column+1, size, size_format)
         worksheet.write(1,column, 'Store ID', bold)
         worksheet.write(1,column+1, 'Kiekis', bold)
@@ -122,20 +135,36 @@ def export_product_sizes_to_xlsx(product_info,file_path_name):
 
     # Iterate over the data and write it out row by row.
     for product_id, product in products_with_sizes.items():
-        worksheet.write(row, 0, product_id)
+        worksheet.write(row, 0, product["sku"])
+        worksheet.write(row, 1, product_id)
+        worksheet.write(row, 2, product["total_quantity"])
+
+        total_competitors_quantity = 0
 
         for size in product["sizes"]["available"].values():
-            column = sizes_index_map[size["description"]]*2+1
+            column = sizes_index_map[size["description"]]*2+4
 
-            worksheet.write(row, column, size["storeId"])
+            # the store id is ours
+            if str(size["storeId"]) in stores:
+                worksheet.write(row, column, stores[str(size["storeId"])], storeIDColor)
+                
+            else:
+                worksheet.write(row, column, size["storeId"])
+                total_competitors_quantity += size["quantity"]
+
             worksheet.write(row, column+1, size["quantity"])
+
+        worksheet.write(row, 3, total_competitors_quantity)
            
         row += 1
+
+    worksheet.set_column(0, 0, 25)
+    worksheet.set_column(1, 500, 12)
 
     workbook.close()
 
 if __name__ == "__main__":
     with open("results.json") as f:
-        export_products_to_xlsx(json.load(f), "rezultatai", False)
+        export_product_sizes_to_xlsx(json.load(f), "rezultatai", {"13040":"TOPS Latvia"})
 
     

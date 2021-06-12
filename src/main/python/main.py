@@ -56,16 +56,26 @@ class App(QWidget):
         self.store_ids_table = ""
         self.products_table = ""
         self.price_table = ""
+        self.ff_price_table = ""
 
         self.main_table_save_path = ""
         self.quantity_table_save_path = ""
 
         self.scrape_breadth_options = {}
-        self.scrape_breadth_options["men_shoes"] = QCheckBox("Vyriski batai")
-        self.scrape_breadth_options["women_shoes"] = QCheckBox("Moteriski batai")
+        self.scrape_breadth_options["men_shoes"] = {"checkbox": QCheckBox("Vyriška avalinė"), "category_id": "135968"}
+        self.scrape_breadth_options["women_shoes"] = {"checkbox": QCheckBox("Moteriška avalinė"), "category_id": "136301"}
+        self.scrape_breadth_options["men_clothing"] = {"checkbox": QCheckBox("Vyriški drabužiai"), "category_id": "136330"}
+        self.scrape_breadth_options["men_bags"] = {"checkbox": QCheckBox("Vyriškos rankinės"), "category_id": "135970"}
+        self.scrape_breadth_options["men_accesories"] = {"checkbox": QCheckBox("Vyriški aksesuarai"), "category_id": "135972"}
+        self.scrape_breadth_options["men_watches"] = {"checkbox": QCheckBox("Vyriški laikrodžiai"), "category_id": "137177"}
+        
+        self.scrape_breadth_options["women_clothing"] = {"checkbox": QCheckBox("Moteriški drabužiai"), "category_id": "135967"}
+        self.scrape_breadth_options["women_bags"] = {"checkbox": QCheckBox("Moteriškos rankinės"), "category_id": "135971"}
+        self.scrape_breadth_options["women_accesories"] = {"checkbox": QCheckBox("Moteriški aksesuarai"), "category_id": "135973"}
+        self.scrape_breadth_options["women_watches"] = {"checkbox": QCheckBox("Moteriški papuošalai"), "category_id": "135977"}
 
         self.region_select_combo_box = QComboBox()
-        self.region_select_combo_box.addItems(["de","en"])
+        self.region_select_combo_box.addItems(["de","ru","lt","pl","uk","lv","ee"])
 
         self.extra_options = {}
         self.extra_options["check_quantity"] = QCheckBox("Tikrinti likučius")
@@ -74,6 +84,7 @@ class App(QWidget):
         self.analise = QPushButton('Analizuoti')
 
         self.progress_bar = QProgressBar()
+        self.progress_bar.setValue(0)
         self.progress_bar.setMinimum(0)
         self.progress_bar.setMaximum(100)
 
@@ -118,19 +129,26 @@ class App(QWidget):
         btn.clicked.connect(self.getFileForPrice)
         fileSelectLayout.addWidget(btn)
 
+        # FF Price
+        btn = QPushButton('FF kainodaros lentelė')
+        btn.clicked.connect(self.getFileForFFPrice)
+        fileSelectLayout.addWidget(btn)
 
-        # --------- Create a layout for the checkboxes
-        groupbox = QGroupBox("Analizės apimtis")
+        # --------- Create a layout for additional options
+        groupbox = QGroupBox("Papildomi nustatymai")
         outerUpperLayout.addWidget(groupbox,0, 1)
-                
+
         optionsLayout = QVBoxLayout()
         groupbox.setLayout(optionsLayout)
 
-        # Add some checkboxes to the layout
-        for option_id, widget in self.scrape_breadth_options.items():
+        for option_id, widget in self.extra_options.items():
             optionsLayout.addWidget(widget)
 
-        # optionsLayout.addWidget(QCheckBox("Rubai"))
+        boxLayout = QHBoxLayout()
+        optionsLayout.addLayout(boxLayout)
+
+        boxLayout.addWidget(QLabel("Regionas"))
+        boxLayout.addWidget(self.region_select_combo_box)
 
         # --------- Create a output tables
         groupbox = QGroupBox("Analizės rezultatai")
@@ -148,30 +166,38 @@ class App(QWidget):
         btn.clicked.connect(self.getFileForSaveQuantityTable)
         fileSelectLayout.addWidget(btn)
 
+        outerDownLayout = QGridLayout()
 
-        # --------- Create a layout for additional options
-        groupbox = QGroupBox("Papildomi nustatymai")
+        outerDownLayout.addWidget(self.progress_bar)
+
+        # --------- Create a layout for the checkboxes
+        groupbox = QGroupBox("Analizės apimtis")
         outerUpperLayout.addWidget(groupbox,1, 0, 1, 3)
-                
-        optionsLayout = QVBoxLayout()
-        groupbox.setLayout(optionsLayout)
 
-        for option_id, widget in self.extra_options.items():
-            optionsLayout.addWidget(widget)
+        horizontalBox = QHBoxLayout()
+        groupbox.setLayout(horizontalBox)
 
-        boxLayout = QHBoxLayout()
-        optionsLayout.addLayout(boxLayout)
+        menOptionsLayout = QVBoxLayout()
 
-        boxLayout.addWidget(QLabel("Regionas"))
-        boxLayout.addWidget(self.region_select_combo_box)
+        for option_id, widget in self.scrape_breadth_options.items():
+            if option_id.startswith("men"):
+                menOptionsLayout.addWidget(widget["checkbox"])
+
+        horizontalBox.addLayout(menOptionsLayout)
+
+        womensOptionsLayout = QVBoxLayout()
+
+        for option_id, widget in self.scrape_breadth_options.items():
+            if option_id.startswith("women"):
+                womensOptionsLayout.addWidget(widget["checkbox"])
+
+        horizontalBox.addLayout(womensOptionsLayout)
+
 
         # start scrapping button
         self.analise.clicked.connect(self.scrape)
         outerUpperLayout.addWidget(self.analise, 2, 0, 2, 3)
 
-        outerDownLayout = QGridLayout()
-
-        outerDownLayout.addWidget(self.progress_bar)
 
         # main layout
         outerLayout = QGridLayout()
@@ -195,12 +221,15 @@ class App(QWidget):
 
     def getFileForPrice(self):
         self.price_table = self.getFileName()
+
+    def getFileForFFPrice(self):
+        self.ff_price_table = self.getFileName()
     
     def getFileName(self):
         file_filter = 'Excel File (*.xlsx *.xls *.csv)'
         response = QFileDialog.getOpenFileName(
             parent=self,
-            caption='Pasirinkite reikamą lentelę',
+            caption='Pasirinkite reikiamą lentelę',
             directory=os.getcwd(),
             filter=file_filter,
             initialFilter='Excel File (*.xlsx *.xls)'
@@ -237,11 +266,15 @@ class App(QWidget):
             self.displayMessage("Error", "Pasirinkite kainodaros lentelę")
             return
 
+        if not self.ff_price_table:
+            self.displayMessage("Error", "Pasirinkite FF kainodaros lentelę")
+            return
+
         if not self.main_table_save_path:
             self.displayMessage("Error", "Pasirinkite rezultatų lentelę")
             return
 
-        if not self.quantity_table_save_path:
+        if not self.quantity_table_save_path and self.extra_options["check_quantity"].isChecked():
             self.displayMessage("Error", "Pasirinkite likučių rezultatų lentelę")
             return
 
@@ -251,21 +284,21 @@ class App(QWidget):
         print(self.price_table)
         print(self.main_table_save_path)
         print(self.quantity_table_save_path)
-        print(self.scrape_breadth_options["men_shoes"].isChecked())
-        print(self.scrape_breadth_options["women_shoes"].isChecked())
         print(self.extra_options["check_quantity"].isChecked())
         print(self.region_select_combo_box.currentText())
 
         print(self.progress_bar.value())
 
+        category_ids = [option["category_id"] for option in self.scrape_breadth_options.values() if option["checkbox"].isChecked()]
+
         scrapper = Scrapper(self.store_ids_table,
                             self.products_table,
                             self.products_from_ff_table,
                             self.price_table,
+                            self.ff_price_table,
                             self.main_table_save_path,
                             self.quantity_table_save_path,
-                            self.scrape_breadth_options["men_shoes"].isChecked(),
-                            self.scrape_breadth_options["women_shoes"].isChecked(),
+                            category_ids,
                             self.extra_options["check_quantity"].isChecked(),
                             self.extra_options["add_images"].isChecked(),
                             self.region_select_combo_box.currentText(),

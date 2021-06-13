@@ -144,10 +144,10 @@ class Scrapper():
                             "price": "",
                             "currency": "",
                             "sizes": {},
-                            "ff_base_price": "",
-                            "ff_base_price": "",
-                            "ff_base_discount": "",
-                            "ff_sale_price": ""
+                            "ff_base_price": "Nenurodyta",
+                            "ff_base_price": "Nenurodyta",
+                            "ff_base_discount": "Nenurodyta",
+                            "ff_sale_price": "Nenurodyta"
                     }
 
                     self.product_to_ff_status_map[product_id] = product_info

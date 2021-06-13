@@ -84,7 +84,7 @@ class Scrapper():
             raise Exception("Netinkamas lenteles formatas", "Kainodaros lentele {}".format(self.price_table))
             
         # load ff file to determine if product ids that are in
-        # product file are child or parent
+        # product file are child or parentl
 
         extension = os.path.splitext(self.products_from_ff_table)[1]
         # if extension[1] == ".csv":
@@ -143,7 +143,11 @@ class Scrapper():
                             "url": "",
                             "price": "",
                             "currency": "",
-                            "sizes": {}
+                            "sizes": {},
+                            "ff_base_price": "",
+                            "ff_base_price": "",
+                            "ff_base_discount": "",
+                            "ff_sale_price": ""
                     }
 
                     self.product_to_ff_status_map[product_id] = product_info

@@ -27,8 +27,7 @@ from PyQt5.QtWidgets import (
     QPlainTextEdit
 )
 
-logging.basicConfig(filename='debug.log', encoding='utf-8', level=logging.DEBUG)
-
+logging.basicConfig(filename="debug.log", level=logging.DEBUG)
 
 class Worker(QObject):
     finished = pyqtSignal()

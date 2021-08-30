@@ -1,0 +1,2127 @@
+DEBUG:root:Start of scrape
+DEBUG:root:Store ids table: 
+DEBUG:root:/home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+DEBUG:root:/home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/produktu_lentele (1).xls
+DEBUG:root:/home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF kainodaros lentele.xls
+DEBUG:root:/home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+DEBUG:root:/home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez2
+DEBUG:root:True
+DEBUG:root:de
+DEBUG:root:0
+DEBUG:root:Start of scrape
+DEBUG:root:Store ids table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+DEBUG:root:/home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+DEBUG:root:/home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/produktu_lentele (1).xls
+DEBUG:root:/home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+DEBUG:root:/home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+DEBUG:root:/home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez2
+DEBUG:root:True
+DEBUG:root:de
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=1&c-category=135968 HTTP/1.1" 200 25207
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=1&c-category=135968 HTTP/1.1" 200 25206
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=1&c-category=135968 HTTP/1.1" 200 25207
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=2&c-category=135968 HTTP/1.1" 200 25991
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=3&c-category=135968 HTTP/1.1" 200 26047
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET //de/shopping/men/salvatore-ferragamo-ree-loafer-item-15322012.aspx?storeid=9359 HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/shopping/men/salvatore-ferragamo-ree-loafer-item-15322012.aspx?storeid=9359 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=4&c-category=135968 HTTP/1.1" 200 26008
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=5&c-category=135968 HTTP/1.1" 200 25516
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=6&c-category=135968 HTTP/1.1" 200 26068
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=7&c-category=135968 HTTP/1.1" 200 25811
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=8&c-category=135968 HTTP/1.1" 200 26184
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=9&c-category=135968 HTTP/1.1" 200 26290
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=10&c-category=135968 HTTP/1.1" 200 26524
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=11&c-category=135968 HTTP/1.1" 200 26647
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=12&c-category=135968 HTTP/1.1" 200 26679
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=13&c-category=135968 HTTP/1.1" 200 26731
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=14&c-category=135968 HTTP/1.1" 200 26975
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=15&c-category=135968 HTTP/1.1" 200 26803
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=16&c-category=135968 HTTP/1.1" 200 26893
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=17&c-category=135968 HTTP/1.1" 200 26822
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=18&c-category=135968 HTTP/1.1" 200 26908
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=19&c-category=135968 HTTP/1.1" 200 27181
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=20&c-category=135968 HTTP/1.1" 200 27223
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=21&c-category=135968 HTTP/1.1" 200 27093
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=22&c-category=135968 HTTP/1.1" 200 27017
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=23&c-category=135968 HTTP/1.1" 200 26626
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=24&c-category=135968 HTTP/1.1" 200 26660
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=25&c-category=135968 HTTP/1.1" 200 26699
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=26&c-category=135968 HTTP/1.1" 200 27198
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=27&c-category=135968 HTTP/1.1" 200 27207
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET //de/shopping/men/salvatore-ferragamo-klassische-loafer-item-12073572.aspx?storeid=11004 HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/shopping/men/salvatore-ferragamo-klassische-loafer-item-12073572.aspx?storeid=11004 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=28&c-category=135968 HTTP/1.1" 200 27086
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=29&c-category=135968 HTTP/1.1" 200 27513
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=30&c-category=135968 HTTP/1.1" 200 27190
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=31&c-category=135968 HTTP/1.1" 200 27250
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=32&c-category=135968 HTTP/1.1" 200 27056
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=33&c-category=135968 HTTP/1.1" 200 27217
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET //de/shopping/men/salvatore-ferragamo-loafer-mit-vara-schnalle-item-14147966.aspx?storeid=9053 HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/shopping/men/salvatore-ferragamo-loafer-mit-vara-schnalle-item-14147966.aspx?storeid=9053 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=34&c-category=135968 HTTP/1.1" 200 27151
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=35&c-category=135968 HTTP/1.1" 200 27233
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET //de/shopping/men/salvatore-ferragamo-sneakers-mit-logo-print-item-14266362.aspx?storeid=9796 HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/shopping/men/salvatore-ferragamo-sneakers-mit-logo-print-item-14266362.aspx?storeid=9796 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=36&c-category=135968 HTTP/1.1" 200 27264
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=37&c-category=135968 HTTP/1.1" 200 27221
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=38&c-category=135968 HTTP/1.1" 200 27237
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=39&c-category=135968 HTTP/1.1" 200 27095
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=40&c-category=135968 HTTP/1.1" 200 27511
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=41&c-category=135968 HTTP/1.1" 200 27168
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=42&c-category=135968 HTTP/1.1" 200 27340
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET //de/shopping/men/salvatore-ferragamo-groove-gancini-pantoletten-item-16147573.aspx?storeid=10952 HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/shopping/men/salvatore-ferragamo-groove-gancini-pantoletten-item-16147573.aspx?storeid=10952 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=43&c-category=135968 HTTP/1.1" 200 27094
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=44&c-category=135968 HTTP/1.1" 200 27254
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=45&c-category=135968 HTTP/1.1" 200 27420
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=46&c-category=135968 HTTP/1.1" 200 27366
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=47&c-category=135968 HTTP/1.1" 200 27175
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=48&c-category=135968 HTTP/1.1" 200 27232
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=49&c-category=135968 HTTP/1.1" 200 27248
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=50&c-category=135968 HTTP/1.1" 200 27480
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET //de/shopping/men/salvatore-ferragamo-loafer-mit-gancini-detail-item-12576370.aspx?storeid=11828 HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/shopping/men/salvatore-ferragamo-loafer-mit-gancini-detail-item-12576370.aspx?storeid=11828 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=51&c-category=135968 HTTP/1.1" 200 27275
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET //de/shopping/men/salvatore-ferragamo-cube-sneakers-item-15321020.aspx?storeid=10952 HTTP/1.1" 301 0
+INFO:root:Start
+INFO:root:Store ids table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Products from ff table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+INFO:root:Products table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/produktu_lentele (1).xls
+INFO:root:Price table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+INFO:root:Rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Quantity rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez2
+INFO:root:Check quantity: True
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Products from ff table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+INFO:root:Products table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/produktu_lentele (1).xls
+INFO:root:Price table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+INFO:root:Rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Quantity rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez2
+INFO:root:Check quantity: True
+INFO:root:Region: de
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=1&c-category=135968 HTTP/1.1" 200 25216
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=1&c-category=135968 HTTP/1.1" 200 25236
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=1&c-category=135968 HTTP/1.1" 200 25237
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=2&c-category=135968 HTTP/1.1" 200 25986
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=3&c-category=135968 HTTP/1.1" 200 26059
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET //de/shopping/men/salvatore-ferragamo-ree-loafer-item-15322012.aspx?storeid=9359 HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/shopping/men/salvatore-ferragamo-ree-loafer-item-15322012.aspx?storeid=9359 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=4&c-category=135968 HTTP/1.1" 200 25994
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=5&c-category=135968 HTTP/1.1" 200 25537
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=6&c-category=135968 HTTP/1.1" 200 26057
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=7&c-category=135968 HTTP/1.1" 200 25823
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=8&c-category=135968 HTTP/1.1" 200 26171
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=9&c-category=135968 HTTP/1.1" 200 26296
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=10&c-category=135968 HTTP/1.1" 200 26507
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=11&c-category=135968 HTTP/1.1" 200 26681
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=12&c-category=135968 HTTP/1.1" 200 26676
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=13&c-category=135968 HTTP/1.1" 200 26742
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=14&c-category=135968 HTTP/1.1" 200 26993
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=15&c-category=135968 HTTP/1.1" 200 26821
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=16&c-category=135968 HTTP/1.1" 200 26921
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=17&c-category=135968 HTTP/1.1" 200 26819
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=18&c-category=135968 HTTP/1.1" 200 26910
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=19&c-category=135968 HTTP/1.1" 200 27183
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=20&c-category=135968 HTTP/1.1" 200 27204
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=21&c-category=135968 HTTP/1.1" 200 27082
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=22&c-category=135968 HTTP/1.1" 200 27011
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=23&c-category=135968 HTTP/1.1" 200 26622
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=24&c-category=135968 HTTP/1.1" 200 26651
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=25&c-category=135968 HTTP/1.1" 200 26705
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=26&c-category=135968 HTTP/1.1" 200 27187
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=27&c-category=135968 HTTP/1.1" 200 27211
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET //de/shopping/men/salvatore-ferragamo-klassische-loafer-item-12073572.aspx?storeid=11004 HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/shopping/men/salvatore-ferragamo-klassische-loafer-item-12073572.aspx?storeid=11004 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=28&c-category=135968 HTTP/1.1" 200 27088
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=29&c-category=135968 HTTP/1.1" 200 27526
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=30&c-category=135968 HTTP/1.1" 200 27185
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=31&c-category=135968 HTTP/1.1" 200 27249
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=32&c-category=135968 HTTP/1.1" 200 27059
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=33&c-category=135968 HTTP/1.1" 200 27214
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET //de/shopping/men/salvatore-ferragamo-loafer-mit-vara-schnalle-item-14147966.aspx?storeid=9053 HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/shopping/men/salvatore-ferragamo-loafer-mit-vara-schnalle-item-14147966.aspx?storeid=9053 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=34&c-category=135968 HTTP/1.1" 200 27158
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=35&c-category=135968 HTTP/1.1" 200 27239
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+INFO:root:Start
+INFO:root:Store ids table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Products from ff table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+INFO:root:Products table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/produktu_lentele (1).xls
+INFO:root:Price table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+INFO:root:Rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Quantity rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez2
+INFO:root:Check quantity: True
+INFO:root:Region: de
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=1&c-category=135968 HTTP/1.1" 200 25220
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=1&c-category=135968 HTTP/1.1" 200 25226
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=1&c-category=135968 HTTP/1.1" 200 25220
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=2&c-category=135968 HTTP/1.1" 200 25990
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=3&c-category=135968 HTTP/1.1" 200 26047
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET //de/shopping/men/salvatore-ferragamo-ree-loafer-item-15322012.aspx?storeid=9359 HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/shopping/men/salvatore-ferragamo-ree-loafer-item-15322012.aspx?storeid=9359 HTTP/1.1" 200 None
+INFO:root:Start
+INFO:root:Store ids table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Products from ff table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+INFO:root:Products table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/produktu_lentele (1).xls
+INFO:root:Price table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+INFO:root:Rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Quantity rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez2
+INFO:root:Check quantity: True
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Products from ff table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+INFO:root:Products table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/produktu_lentele (1).xls
+INFO:root:Price table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+INFO:root:Rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Quantity rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez2
+INFO:root:Check quantity: True
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'TypeError'>, TypeError('not all arguments converted during string formatting'), <traceback object at 0x7fe44790e6c0>)
+INFO:root:Start
+INFO:root:Store ids table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Products from ff table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+INFO:root:Products table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/produktu_lentele (1).xls
+INFO:root:Price table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+INFO:root:Rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Quantity rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez2
+INFO:root:Check quantity: True
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'TypeError'>, TypeError('not all arguments converted during string formatting'), <traceback object at 0x7f56f6acc640>)
+INFO:root:Start
+INFO:root:Store ids table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Products from ff table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+INFO:root:Products table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/produktu_lentele (1).xls
+INFO:root:Price table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+INFO:root:Rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Quantity rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez2
+INFO:root:Check quantity: True
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'TypeError'>, TypeError('not all arguments converted during string formatting'), <traceback object at 0x7f6368cb37c0>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Products from ff table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+INFO:root:Products table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/produktu_lentele (1).xls
+INFO:root:Price table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+INFO:root:Rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Quantity rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez2
+INFO:root:Check quantity: True
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'TypeError'>, TypeError('not all arguments converted during string formatting'), <traceback object at 0x7f70bd392400>)
+INFO:root:Start
+INFO:root:Store ids table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Products from ff table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+INFO:root:Products table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/produktu_lentele (1).xls
+INFO:root:Price table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+INFO:root:Rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Quantity rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez2
+INFO:root:Check quantity: True
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'TypeError'>, TypeError('not all arguments converted during string formatting'), <traceback object at 0x7f2279d2afc0>)
+INFO:root:Start
+INFO:root:Store ids table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Products from ff table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+INFO:root:Products table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/produktu_lentele (1).xls
+INFO:root:Price table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+INFO:root:Rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Quantity rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez2
+INFO:root:Check quantity: True
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Products from ff table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+INFO:root:Products table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/produktu_lentele (1).xls
+INFO:root:Price table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+INFO:root:Rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Quantity rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez2
+INFO:root:Check quantity: True
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'TypeError'>, TypeError('not all arguments converted during string formatting'), <traceback object at 0x7f8a9a3962c0>)
+INFO:root:Start
+INFO:root:Store ids table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Products from ff table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+INFO:root:Products table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/produktu_lentele (1).xls
+INFO:root:Price table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+INFO:root:Rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Quantity rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez2
+INFO:root:Check quantity: True
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Products from ff table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+INFO:root:Products table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/produktu_lentele (1).xls
+INFO:root:Price table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+INFO:root:Rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Quantity rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez2
+INFO:root:Check quantity: True
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Products from ff table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+INFO:root:Products table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Price table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+INFO:root:Rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Quantity rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez2
+INFO:root:Check quantity: True
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Products from ff table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+INFO:root:Products table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Price table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+INFO:root:Rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Quantity rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez2
+INFO:root:Check quantity: True
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'KeyError'>, KeyError('FF prekės ID'), <traceback object at 0x7ff8da9c51c0>)
+INFO:root:Start
+INFO:root:Store ids table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Products from ff table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+INFO:root:Products table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Price table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+INFO:root:Rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Quantity rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez2
+INFO:root:Check quantity: True
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Products from ff table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+INFO:root:Products table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/produktu_lentele (1).xls
+INFO:root:Price table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+INFO:root:Rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Quantity rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez2
+INFO:root:Check quantity: True
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'TypeError'>, TypeError('not all arguments converted during string formatting'), <traceback object at 0x7f2817924140>)
+INFO:root:Start
+INFO:root:Store ids table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Products from ff table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+INFO:root:Products table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/produktu_lentele (1).xls
+INFO:root:Price table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+INFO:root:Rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Quantity rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez2
+INFO:root:Check quantity: True
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Products from ff table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+INFO:root:Products table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/produktu_lentele (1).xls
+INFO:root:Price table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+INFO:root:Rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Quantity rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Check quantity: True
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'TypeError'>, TypeError('not all arguments converted during string formatting'), <traceback object at 0x7f909c170240>)
+INFO:root:Start
+INFO:root:Store ids table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Products from ff table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+INFO:root:Products table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/produktu_lentele (1).xls
+INFO:root:Price table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+INFO:root:Rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Quantity rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Check quantity: True
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Products from ff table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+INFO:root:Products table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/produktu_lentele (1).xls
+INFO:root:Price table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+INFO:root:Rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Quantity rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez2
+INFO:root:Check quantity: True
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'TypeError'>, TypeError('not all arguments converted during string formatting'), <traceback object at 0x7f78f00a2480>)
+INFO:root:Start
+INFO:root:Store ids table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Products from ff table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+INFO:root:Products table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/produktu_lentele (1).xls
+INFO:root:Price table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+INFO:root:Rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Quantity rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez2
+INFO:root:Check quantity: True
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7ff49dec3bc0>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7fa03623b640>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7fdb333ad600>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7fb13ed84dc0>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f51144c4500>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7fc0090be680>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f9edf2ec440>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f6bc00b9640>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f1178107640>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f7d57c52480>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f7470b77640>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7fbe0598e940>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7ff3ddfd5a80>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7ff3ddfd5380>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f3ff4b3a600>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7fe226da2500>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7fe226da2680>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7ff7c7142c80>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f308e660c80>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7fc5ec9a93c0>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f57f3c89740>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7fe1029615c0>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f02a8ddfb00>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7fd1ae995d00>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7faf64911800>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f0c2dcd1c40>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f0c2dcd15c0>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f3734c99a00>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f3734c991c0>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7fdbe4832340>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f201540f780>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7fbce6a32a80>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f7f4a29ad00>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f576f689ec0>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7ff08ac9ce80>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7fa33ce3db40>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7fed9212ad80>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f97585a2980>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7ff42c797b40>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7ffa462a8b80>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f2af018aac0>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f6e942ebc40>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7fc81c91fa40>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f1e9e251c40>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Start
+INFO:root:Start
+INFO:root:Start
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7fb3b1f3be00>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7fdc50a11a40>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f8275b2fb00>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7fcdcc8e8f40>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f118ee90180>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f118ee92f80>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f118ee92e40>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f118ee92f40>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f118ee92e80>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+INFO:root:Products table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/produktu_lentele (1).xls
+INFO:root:Price table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+INFO:root:Rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Quantity rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Check quantity: True
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f1191938c00>)
+INFO:root:Start
+INFO:root:Store ids table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Products from ff table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+INFO:root:Products table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/produktu_lentele (1).xls
+INFO:root:Price table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+INFO:root:Rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Quantity rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Check quantity: True
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'TypeError'>, TypeError('not all arguments converted during string formatting'), <traceback object at 0x7f117019d740>)
+INFO:root:Start
+INFO:root:Store ids table: 
+INFO:root:Products from ff table: 
+INFO:root:Products table: 
+INFO:root:Price table: 
+INFO:root:Rez table: 
+INFO:root:Quantity rez table: 
+INFO:root:Check quantity: False
+INFO:root:Region: de
+ERROR:root:Klaida:(<class 'Exception'>, Exception('Netinkamas lenteles formatas', 'Parduotuviu lentele '), <traceback object at 0x7f4469a0f1c0>)
+INFO:root:Start
+INFO:root:Store ids table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/parduotuviu_lentele (2).xls
+INFO:root:Products from ff table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/FF likuciu_lentele.xls
+INFO:root:Products table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/produktu_lentele (1).xls
+INFO:root:Price table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/kainodaros lentele (1).xls
+INFO:root:Rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez
+INFO:root:Quantity rez table: /home/tomas/Projects/FFScannerWindows/src/main/python/lenteles/rez2
+INFO:root:Check quantity: True
+INFO:root:Region: de
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=1&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=1&c-category=135968 HTTP/1.1" 200 25267
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=1&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=1&c-category=135968 HTTP/1.1" 200 25274
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=1&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=1&c-category=135968 HTTP/1.1" 200 25276
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=2&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=2&c-category=135968 HTTP/1.1" 200 25947
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=3&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=3&c-category=135968 HTTP/1.1" 200 26051
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=4&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=4&c-category=135968 HTTP/1.1" 200 26165
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=5&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=5&c-category=135968 HTTP/1.1" 200 25982
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=6&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=6&c-category=135968 HTTP/1.1" 200 25983
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=7&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=7&c-category=135968 HTTP/1.1" 200 25836
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=8&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=8&c-category=135968 HTTP/1.1" 200 26227
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=9&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=9&c-category=135968 HTTP/1.1" 200 26600
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=10&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=10&c-category=135968 HTTP/1.1" 200 26193
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=11&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=11&c-category=135968 HTTP/1.1" 200 26567
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=12&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=12&c-category=135968 HTTP/1.1" 200 26794
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=13&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=13&c-category=135968 HTTP/1.1" 200 26866
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=14&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=14&c-category=135968 HTTP/1.1" 200 27024
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=15&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=15&c-category=135968 HTTP/1.1" 200 26861
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=16&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=16&c-category=135968 HTTP/1.1" 200 26899
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=17&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=17&c-category=135968 HTTP/1.1" 200 26982
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=18&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=18&c-category=135968 HTTP/1.1" 200 26943
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=19&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=19&c-category=135968 HTTP/1.1" 200 27150
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=20&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=20&c-category=135968 HTTP/1.1" 200 27123
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=21&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=21&c-category=135968 HTTP/1.1" 200 27235
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=22&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=22&c-category=135968 HTTP/1.1" 200 27268
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=23&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=23&c-category=135968 HTTP/1.1" 200 26526
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=24&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=24&c-category=135968 HTTP/1.1" 200 26783
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=25&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=25&c-category=135968 HTTP/1.1" 200 26849
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=26&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=26&c-category=135968 HTTP/1.1" 200 27224
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=27&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=27&c-category=135968 HTTP/1.1" 200 27067
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=28&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=28&c-category=135968 HTTP/1.1" 200 26877
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET //de/shopping/men/salvatore-ferragamo-klassische-loafer-item-12073572.aspx?storeid=11004 HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/shopping/men/salvatore-ferragamo-klassische-loafer-item-12073572.aspx?storeid=11004 HTTP/1.1" 200 None
+INFO:root:Js analysis started
+INFO:root:Js analysis is done
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=29&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=29&c-category=135968 HTTP/1.1" 200 27231
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=30&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=30&c-category=135968 HTTP/1.1" 200 27268
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=31&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=31&c-category=135968 HTTP/1.1" 200 27037
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=32&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=32&c-category=135968 HTTP/1.1" 200 27197
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=33&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=33&c-category=135968 HTTP/1.1" 200 27355
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=34&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=34&c-category=135968 HTTP/1.1" 200 27308
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=35&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=35&c-category=135968 HTTP/1.1" 200 27518
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=36&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=36&c-category=135968 HTTP/1.1" 200 27501
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET //de/shopping/men/salvatore-ferragamo-loafer-mit-vara-schnalle-item-14147966.aspx?storeid=9053 HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/shopping/men/salvatore-ferragamo-loafer-mit-vara-schnalle-item-14147966.aspx?storeid=9053 HTTP/1.1" 200 None
+INFO:root:Js analysis started
+INFO:root:Js analysis is done
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=37&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=37&c-category=135968 HTTP/1.1" 200 27026
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET //de/shopping/men/salvatore-ferragamo-sneakers-mit-logo-print-item-14266362.aspx?storeid=9796 HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/shopping/men/salvatore-ferragamo-sneakers-mit-logo-print-item-14266362.aspx?storeid=9796 HTTP/1.1" 200 None
+INFO:root:Js analysis started
+INFO:root:Js analysis is done
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=38&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=38&c-category=135968 HTTP/1.1" 200 27130
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=39&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=39&c-category=135968 HTTP/1.1" 200 27347
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=40&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=40&c-category=135968 HTTP/1.1" 200 27435
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=41&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=41&c-category=135968 HTTP/1.1" 200 27014
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=42&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=42&c-category=135968 HTTP/1.1" 200 27329
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=43&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=43&c-category=135968 HTTP/1.1" 200 27438
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=44&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=44&c-category=135968 HTTP/1.1" 200 27416
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=45&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=45&c-category=135968 HTTP/1.1" 200 27173
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET //de/shopping/men/salvatore-ferragamo-groove-gancini-pantoletten-item-16147573.aspx?storeid=10952 HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/shopping/men/salvatore-ferragamo-groove-gancini-pantoletten-item-16147573.aspx?storeid=10952 HTTP/1.1" 200 None
+INFO:root:Js analysis started
+INFO:root:Js analysis is done
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=46&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=46&c-category=135968 HTTP/1.1" 200 27485
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=47&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=47&c-category=135968 HTTP/1.1" 200 27136
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=48&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=48&c-category=135968 HTTP/1.1" 200 27152
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET //de/shopping/men/salvatore-ferragamo-loafer-mit-gancini-detail-item-12576370.aspx?storeid=11828 HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/shopping/men/salvatore-ferragamo-loafer-mit-gancini-detail-item-12576370.aspx?storeid=11828 HTTP/1.1" 200 None
+INFO:root:Js analysis started
+INFO:root:Js analysis is done
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=49&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=49&c-category=135968 HTTP/1.1" 200 27361
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET //de/shopping/men/salvatore-ferragamo-cube-sneakers-item-15321020.aspx?storeid=10952 HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/shopping/men/salvatore-ferragamo-cube-sneakers-item-15321020.aspx?storeid=10952 HTTP/1.1" 200 None
+INFO:root:Js analysis started
+INFO:root:Js analysis is done
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=50&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=50&c-category=135968 HTTP/1.1" 200 27438
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=51&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=51&c-category=135968 HTTP/1.1" 200 26965
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=52&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=52&c-category=135968 HTTP/1.1" 200 27315
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=53&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=53&c-category=135968 HTTP/1.1" 200 27438
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=54&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=54&c-category=135968 HTTP/1.1" 200 27243
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=55&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=55&c-category=135968 HTTP/1.1" 200 27380
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=56&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=56&c-category=135968 HTTP/1.1" 200 27096
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=57&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=57&c-category=135968 HTTP/1.1" 200 27526
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=58&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=58&c-category=135968 HTTP/1.1" 200 27030
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET //de/shopping/men/salvatore-ferragamo-brooklyn-sneakers-item-14115909.aspx?storeid=9053 HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/shopping/men/salvatore-ferragamo-brooklyn-sneakers-item-14115909.aspx?storeid=9053 HTTP/1.1" 200 None
+INFO:root:Js analysis started
+INFO:root:Js analysis is done
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=59&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=59&c-category=135968 HTTP/1.1" 200 27116
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=60&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=60&c-category=135968 HTTP/1.1" 200 27605
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=61&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=61&c-category=135968 HTTP/1.1" 200 27287
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=62&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=62&c-category=135968 HTTP/1.1" 200 27247
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=63&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=63&c-category=135968 HTTP/1.1" 200 27282
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=64&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=64&c-category=135968 HTTP/1.1" 200 27670
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=65&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=65&c-category=135968 HTTP/1.1" 200 27269
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=66&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=66&c-category=135968 HTTP/1.1" 200 27397
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=67&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=67&c-category=135968 HTTP/1.1" 200 27583
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=68&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=68&c-category=135968 HTTP/1.1" 200 27526
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=69&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=69&c-category=135968 HTTP/1.1" 200 27308
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=70&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=70&c-category=135968 HTTP/1.1" 200 27176
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=71&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=71&c-category=135968 HTTP/1.1" 200 27386
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=72&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=72&c-category=135968 HTTP/1.1" 200 27189
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=73&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=73&c-category=135968 HTTP/1.1" 200 27359
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=74&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=74&c-category=135968 HTTP/1.1" 200 27279
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=75&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=75&c-category=135968 HTTP/1.1" 200 27319
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=76&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=76&c-category=135968 HTTP/1.1" 200 27324
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=77&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=77&c-category=135968 HTTP/1.1" 200 27340
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=78&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=78&c-category=135968 HTTP/1.1" 200 27406
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=79&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=79&c-category=135968 HTTP/1.1" 200 27121
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=80&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=80&c-category=135968 HTTP/1.1" 200 27601
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=81&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=81&c-category=135968 HTTP/1.1" 200 27239
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=82&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=82&c-category=135968 HTTP/1.1" 200 27419
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=83&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=83&c-category=135968 HTTP/1.1" 200 27264
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=84&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=84&c-category=135968 HTTP/1.1" 200 27493
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=85&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=85&c-category=135968 HTTP/1.1" 200 27316
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=86&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=86&c-category=135968 HTTP/1.1" 200 27396
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=87&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=87&c-category=135968 HTTP/1.1" 200 27527
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=88&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=88&c-category=135968 HTTP/1.1" 200 27333
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=89&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=89&c-category=135968 HTTP/1.1" 200 27183
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=90&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=90&c-category=135968 HTTP/1.1" 200 27240
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=91&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=91&c-category=135968 HTTP/1.1" 200 27514
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=92&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=92&c-category=135968 HTTP/1.1" 200 27198
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=93&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=93&c-category=135968 HTTP/1.1" 200 27513
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=94&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=94&c-category=135968 HTTP/1.1" 200 27280
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=95&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=95&c-category=135968 HTTP/1.1" 200 27567
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=96&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=96&c-category=135968 HTTP/1.1" 200 27418
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET //de/shopping/men/salvatore-ferragamo-gewebte-gancini-espadrilles-item-16271826.aspx?storeid=10207 HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/shopping/men/salvatore-ferragamo-gewebte-gancini-espadrilles-item-16271826.aspx?storeid=10207 HTTP/1.1" 200 None
+INFO:root:Js analysis started
+INFO:root:Js analysis is done
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=97&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=97&c-category=135968 HTTP/1.1" 200 27305
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=98&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=98&c-category=135968 HTTP/1.1" 200 27142
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=99&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=99&c-category=135968 HTTP/1.1" 200 27287
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=100&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=100&c-category=135968 HTTP/1.1" 200 27256
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=101&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=101&c-category=135968 HTTP/1.1" 200 27459
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=102&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=102&c-category=135968 HTTP/1.1" 200 27440
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=103&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=103&c-category=135968 HTTP/1.1" 200 27617
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=104&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=104&c-category=135968 HTTP/1.1" 200 27273
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=105&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=105&c-category=135968 HTTP/1.1" 200 27382
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=106&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=106&c-category=135968 HTTP/1.1" 200 27014
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET //de/shopping/men/salvatore-ferragamo-schnurschuhe-mit-profilsohle-item-15461617.aspx?storeid=9568 HTTP/1.1" 301 0
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/shopping/men/salvatore-ferragamo-schnurschuhe-mit-profilsohle-item-15461617.aspx?storeid=9568 HTTP/1.1" 200 None
+INFO:root:Js analysis started
+INFO:root:Js analysis is done
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=107&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=107&c-category=135968 HTTP/1.1" 200 27426
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=108&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=108&c-category=135968 HTTP/1.1" 200 27124
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=109&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=109&c-category=135968 HTTP/1.1" 200 27217
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=110&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=110&c-category=135968 HTTP/1.1" 200 27395
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=111&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=111&c-category=135968 HTTP/1.1" 200 27189
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=112&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=112&c-category=135968 HTTP/1.1" 200 27381
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=113&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=113&c-category=135968 HTTP/1.1" 200 27204
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=114&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=114&c-category=135968 HTTP/1.1" 200 27401
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=115&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=115&c-category=135968 HTTP/1.1" 200 27260
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=116&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=116&c-category=135968 HTTP/1.1" 200 27121
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=117&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=117&c-category=135968 HTTP/1.1" 200 27207
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=118&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=118&c-category=135968 HTTP/1.1" 200 27105
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=119&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=119&c-category=135968 HTTP/1.1" 200 27381
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=120&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=120&c-category=135968 HTTP/1.1" 200 27175
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=121&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=121&c-category=135968 HTTP/1.1" 200 27322
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=122&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=122&c-category=135968 HTTP/1.1" 200 27358
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=123&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=123&c-category=135968 HTTP/1.1" 200 27208
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=124&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=124&c-category=135968 HTTP/1.1" 200 27575
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=125&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=125&c-category=135968 HTTP/1.1" 200 27214
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=126&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=126&c-category=135968 HTTP/1.1" 200 27193
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=127&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=127&c-category=135968 HTTP/1.1" 200 27187
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=128&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=128&c-category=135968 HTTP/1.1" 200 27273
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=129&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=129&c-category=135968 HTTP/1.1" 200 27434
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=130&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=130&c-category=135968 HTTP/1.1" 200 27423
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=131&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=131&c-category=135968 HTTP/1.1" 200 26986
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=132&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=132&c-category=135968 HTTP/1.1" 200 27229
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=133&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=133&c-category=135968 HTTP/1.1" 200 27238
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=134&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=134&c-category=135968 HTTP/1.1" 200 27096
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=135&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=135&c-category=135968 HTTP/1.1" 200 27054
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=136&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=136&c-category=135968 HTTP/1.1" 200 27231
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=137&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=137&c-category=135968 HTTP/1.1" 200 27275
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=138&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=138&c-category=135968 HTTP/1.1" 200 27294
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=139&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=139&c-category=135968 HTTP/1.1" 200 27342
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=140&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=140&c-category=135968 HTTP/1.1" 200 27439
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=141&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=141&c-category=135968 HTTP/1.1" 200 27332
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=142&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=142&c-category=135968 HTTP/1.1" 200 27387
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=143&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=143&c-category=135968 HTTP/1.1" 200 27546
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=144&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=144&c-category=135968 HTTP/1.1" 200 26838
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=145&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=145&c-category=135968 HTTP/1.1" 200 27477
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=146&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=146&c-category=135968 HTTP/1.1" 200 27184
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=147&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=147&c-category=135968 HTTP/1.1" 200 27227
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=148&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=148&c-category=135968 HTTP/1.1" 200 27151
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=149&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=149&c-category=135968 HTTP/1.1" 200 27205
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=150&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=150&c-category=135968 HTTP/1.1" 200 27074
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=151&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=151&c-category=135968 HTTP/1.1" 200 27273
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=152&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=152&c-category=135968 HTTP/1.1" 200 27430
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=153&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=153&c-category=135968 HTTP/1.1" 200 27429
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=154&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=154&c-category=135968 HTTP/1.1" 200 27474
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=155&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=155&c-category=135968 HTTP/1.1" 200 27253
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=156&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=156&c-category=135968 HTTP/1.1" 200 27502
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=157&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=157&c-category=135968 HTTP/1.1" 200 27344
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=158&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=158&c-category=135968 HTTP/1.1" 200 27256
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=159&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=159&c-category=135968 HTTP/1.1" 200 27169
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=160&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=160&c-category=135968 HTTP/1.1" 200 27551
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=161&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=161&c-category=135968 HTTP/1.1" 200 27289
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=162&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=162&c-category=135968 HTTP/1.1" 200 27434
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=163&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=163&c-category=135968 HTTP/1.1" 200 27417
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=164&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=164&c-category=135968 HTTP/1.1" 200 27106
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=165&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=165&c-category=135968 HTTP/1.1" 200 27360
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=166&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=166&c-category=135968 HTTP/1.1" 200 27367
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=167&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=167&c-category=135968 HTTP/1.1" 200 27442
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=168&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=168&c-category=135968 HTTP/1.1" 200 27302
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=169&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=169&c-category=135968 HTTP/1.1" 200 27465
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=170&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=170&c-category=135968 HTTP/1.1" 200 27600
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=171&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=171&c-category=135968 HTTP/1.1" 200 27289
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=172&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=172&c-category=135968 HTTP/1.1" 200 27392
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=173&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=173&c-category=135968 HTTP/1.1" 200 27137
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=174&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=174&c-category=135968 HTTP/1.1" 200 27208
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=175&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=175&c-category=135968 HTTP/1.1" 200 27135
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=176&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=176&c-category=135968 HTTP/1.1" 200 27008
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=177&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=177&c-category=135968 HTTP/1.1" 200 27034
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=178&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=178&c-category=135968 HTTP/1.1" 200 27227
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=179&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=179&c-category=135968 HTTP/1.1" 200 27229
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=180&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=180&c-category=135968 HTTP/1.1" 200 27467
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=181&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=181&c-category=135968 HTTP/1.1" 200 27144
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=182&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=182&c-category=135968 HTTP/1.1" 200 27300
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=183&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=183&c-category=135968 HTTP/1.1" 200 27217
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=184&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=184&c-category=135968 HTTP/1.1" 200 27157
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=185&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=185&c-category=135968 HTTP/1.1" 200 27170
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=186&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=186&c-category=135968 HTTP/1.1" 200 27140
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=187&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=187&c-category=135968 HTTP/1.1" 200 27417
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=188&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=188&c-category=135968 HTTP/1.1" 200 27115
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=189&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=189&c-category=135968 HTTP/1.1" 200 27284
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=190&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=190&c-category=135968 HTTP/1.1" 200 27308
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=191&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=191&c-category=135968 HTTP/1.1" 200 27171
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=192&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=192&c-category=135968 HTTP/1.1" 200 26784
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=193&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=193&c-category=135968 HTTP/1.1" 200 27123
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=194&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=194&c-category=135968 HTTP/1.1" 200 26413
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=195&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=195&c-category=135968 HTTP/1.1" 200 27236
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=196&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=196&c-category=135968 HTTP/1.1" 200 27278
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=197&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=197&c-category=135968 HTTP/1.1" 200 27074
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=198&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=198&c-category=135968 HTTP/1.1" 200 27448
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=199&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=199&c-category=135968 HTTP/1.1" 200 27079
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=200&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=200&c-category=135968 HTTP/1.1" 200 26955
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=201&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=201&c-category=135968 HTTP/1.1" 200 27203
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=202&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=202&c-category=135968 HTTP/1.1" 200 26472
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=203&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=203&c-category=135968 HTTP/1.1" 200 25837
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=204&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=204&c-category=135968 HTTP/1.1" 200 26584
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=205&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=205&c-category=135968 HTTP/1.1" 200 26838
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=206&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=206&c-category=135968 HTTP/1.1" 200 26766
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=207&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=207&c-category=135968 HTTP/1.1" 200 26973
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=208&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=208&c-category=135968 HTTP/1.1" 200 27217
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=209&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=209&c-category=135968 HTTP/1.1" 200 27154
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=210&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=210&c-category=135968 HTTP/1.1" 200 27020
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=211&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=211&c-category=135968 HTTP/1.1" 200 27344
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=212&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=212&c-category=135968 HTTP/1.1" 200 27436
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=213&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=213&c-category=135968 HTTP/1.1" 200 27131
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=214&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=214&c-category=135968 HTTP/1.1" 200 26638
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=215&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=215&c-category=135968 HTTP/1.1" 200 27052
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=216&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=216&c-category=135968 HTTP/1.1" 200 27202
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=217&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=217&c-category=135968 HTTP/1.1" 200 27005
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=218&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=218&c-category=135968 HTTP/1.1" 200 27340
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=219&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=219&c-category=135968 HTTP/1.1" 200 27008
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=220&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=220&c-category=135968 HTTP/1.1" 200 26892
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=221&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=221&c-category=135968 HTTP/1.1" 200 27129
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=222&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=222&c-category=135968 HTTP/1.1" 200 26147
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=223&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=223&c-category=135968 HTTP/1.1" 200 26835
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=224&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=224&c-category=135968 HTTP/1.1" 200 26683
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=225&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=225&c-category=135968 HTTP/1.1" 200 27047
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=226&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=226&c-category=135968 HTTP/1.1" 200 26812
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=227&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=227&c-category=135968 HTTP/1.1" 200 26828
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=228&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=228&c-category=135968 HTTP/1.1" 200 26991
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=229&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=229&c-category=135968 HTTP/1.1" 200 27379
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=230&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=230&c-category=135968 HTTP/1.1" 200 26920
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=231&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=231&c-category=135968 HTTP/1.1" 200 26710
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=232&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=232&c-category=135968 HTTP/1.1" 200 27154
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=233&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=233&c-category=135968 HTTP/1.1" 200 26950
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=234&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=234&c-category=135968 HTTP/1.1" 200 26680
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=235&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=235&c-category=135968 HTTP/1.1" 200 26249
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=236&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=236&c-category=135968 HTTP/1.1" 200 26475
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=237&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=237&c-category=135968 HTTP/1.1" 200 26741
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=238&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=238&c-category=135968 HTTP/1.1" 200 26700
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=239&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=239&c-category=135968 HTTP/1.1" 200 27112
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=240&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=240&c-category=135968 HTTP/1.1" 200 26915
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=241&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=241&c-category=135968 HTTP/1.1" 200 26443
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=242&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=242&c-category=135968 HTTP/1.1" 200 27249
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=243&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=243&c-category=135968 HTTP/1.1" 200 27166
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=244&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=244&c-category=135968 HTTP/1.1" 200 27022
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=245&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=245&c-category=135968 HTTP/1.1" 200 26837
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=246&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=246&c-category=135968 HTTP/1.1" 200 26942
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=247&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=247&c-category=135968 HTTP/1.1" 200 26942
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=248&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=248&c-category=135968 HTTP/1.1" 200 26701
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=249&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=249&c-category=135968 HTTP/1.1" 200 26837
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=250&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=250&c-category=135968 HTTP/1.1" 200 27094
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=251&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=251&c-category=135968 HTTP/1.1" 200 26664
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=252&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=252&c-category=135968 HTTP/1.1" 200 26486
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=253&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=253&c-category=135968 HTTP/1.1" 200 26976
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=254&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=254&c-category=135968 HTTP/1.1" 200 26863
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=255&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=255&c-category=135968 HTTP/1.1" 200 26678
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=256&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=256&c-category=135968 HTTP/1.1" 200 26738
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=257&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=257&c-category=135968 HTTP/1.1" 200 26518
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=258&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=258&c-category=135968 HTTP/1.1" 200 26399
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=259&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=259&c-category=135968 HTTP/1.1" 200 26319
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=260&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=260&c-category=135968 HTTP/1.1" 200 26824
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=261&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=261&c-category=135968 HTTP/1.1" 200 26925
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=262&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=262&c-category=135968 HTTP/1.1" 200 26659
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=263&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=263&c-category=135968 HTTP/1.1" 200 26075
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=264&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=264&c-category=135968 HTTP/1.1" 200 26972
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=265&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=265&c-category=135968 HTTP/1.1" 200 26351
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=266&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=266&c-category=135968 HTTP/1.1" 200 27031
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=267&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=267&c-category=135968 HTTP/1.1" 200 27368
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=268&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=268&c-category=135968 HTTP/1.1" 200 26651
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=269&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=269&c-category=135968 HTTP/1.1" 200 25313
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=270&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=270&c-category=135968 HTTP/1.1" 200 25654
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=271&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=271&c-category=135968 HTTP/1.1" 200 25764
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=272&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=272&c-category=135968 HTTP/1.1" 200 25883
+INFO:root:     url: https://www.farfetch.com/de/plpslice/listing-api/products-facets?page=273&c-category=135968
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.farfetch.com:443
+DEBUG:urllib3.connectionpool:https://www.farfetch.com:443 "GET /de/plpslice/listing-api/products-facets?page=273&c-category=135968 HTTP/1.1" 200 17778

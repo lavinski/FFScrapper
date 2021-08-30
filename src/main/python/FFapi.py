@@ -1,7 +1,7 @@
 import requests
 import pandas as pd
 from pandas.io.json import json_normalize
-
+import logging
 
 class Api:
     def __init__(self, c_category = None, category = None, region = "de"):
@@ -36,7 +36,7 @@ class Api:
             self.c_category
         )
 
-        print("     url:", self.baseUrl + self.parameters)
+        logging.info("     url: %s", self.baseUrl + self.parameters)
 
         return self.baseUrl + self.parameters
 

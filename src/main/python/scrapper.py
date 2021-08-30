@@ -78,7 +78,8 @@ class Scrapper():
                 product_sku_to_info[sheet["Prekės Nr."][index]] = {
                     "lowest_price": sheet["Vieneto savikaina"][index], 
                     "nav_collection": sheet["Kolekcija"][index],
-                    "total_quantity": sheet["Galutinis likutis"][index]
+                    "total_quantity": sheet["Galutinis likutis"][index],
+                    "pard_proc": sheet["Pard. Proc."][index]
                 }
         else:
             raise Exception("Netinkamas lenteles formatas", "Kainodaros lentele {}".format(self.price_table))
@@ -140,6 +141,7 @@ class Scrapper():
                             "store_id": "",
                             "nav_collection": str(product_sku_to_info[sheet["Nr."][index]]["nav_collection"]),
                             "total_quantity": str(product_sku_to_info[sheet["Nr."][index]]["total_quantity"]),
+                            "pard_proc": str(product_sku_to_info[sheet["Nr."][index]]["pard_proc"]),
                             "url": "",
                             "price": "",
                             "currency": "",
@@ -163,12 +165,10 @@ class Scrapper():
 
             for index in sheet.index:
                 product_id = str(sheet["Item ID"][index])
-                # print(product_id)
                 if product_id in self.ff_child_to_parent_mapping:
                     product_id = self.ff_child_to_parent_mapping[product_id]
 
                 if product_id in self.product_to_ff_status_map:
-                    # print("yra")
                     self.product_to_ff_status_map[product_id]["ff_base_price"] = str(sheet["Base Price(ā‚¬)"][index])
                     self.product_to_ff_status_map[product_id]["ff_season"] = str(sheet["Season"][index])
                     self.product_to_ff_status_map[product_id]["ff_base_discount"] = str(sheet["Base Discount"][index])
@@ -268,7 +268,7 @@ class Scrapper():
             json.dump(self.product_to_ff_status_map, outfile)
 
         # generate xls file
-        xls_generator.export_products_to_xlsx(self.product_to_ff_status_map, self.main_table_save_path, self.add_images)
+        xls_generator.export_products_to_xlsx(self.product_to_ff_status_map, self.main_table_save_path, self.add_images, self.stores_to_name_mapping)
         xls_generator.export_product_sizes_to_xlsx(self.product_to_ff_status_map, self.quantity_table_save_path, self.stores_to_name_mapping)
 
         self.progress_bar_update_func(100)
@@ -278,6 +278,6 @@ def outputTest(message):
 
 if __name__ == "__main__":
     path_to_the_forlder = "/home/tomas/Projects/FFScannerWindows/src/main/python/lenteles"
-    scrapper = Scrapper(path_to_the_forlder+"/parduotuviu_lentele.xls",path_to_the_forlder+"/produktu_lentele.xls",path_to_the_forlder+'/ff_produktu_lentele.xls',path_to_the_forlder+"/kainodaros_lentele.xls",path_to_the_forlder+"/FF_kainodaros_lentele.xls",path_to_the_forlder+"/rez.xls",path_to_the_forlder+"/rez2.xls",["136301"],progress_bar_update_func=outputTest,scrape_quantity=True)
+    scrapper = Scrapper(path_to_the_forlder+"/parduotuviu_lentele (2).xls",path_to_the_forlder+"/produktu_lentele (1).xls",path_to_the_forlder+'/FF likuciu_lentele.xls',path_to_the_forlder+"/kainodaros lentele (1).xls",path_to_the_forlder+"/FF kainodaros lentele.xls",path_to_the_forlder+"/rez.xls",path_to_the_forlder+"/rez2.xls",["136301"],progress_bar_update_func=outputTest,scrape_quantity=True)
 
     scrapper.scrape()

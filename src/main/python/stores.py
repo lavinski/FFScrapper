@@ -3,6 +3,7 @@ import requests
 import re
 import os 
 import os.path
+import logging
 
 class StoreInformation:
     # mapping from store_id to location
@@ -12,7 +13,6 @@ class StoreInformation:
     def __init__(self, is_quantity_needed):
         self.load_store_information()
         self.is_quantity_needed = is_quantity_needed
-        print(self.stores)
 
     def get_information(self, store_id, product_page_url):
         country_code = ""
@@ -33,18 +33,25 @@ class StoreInformation:
             # with open('response.html', 'w') as file:
                     # json.dump(page.text,file)
 
-            js = re.search("window\['__initialState_slice-pdp__'\] =(.*?)</script>", page.text)
+            # js = re.search("window\['__initialState_slice-pdp__'\] =(.*?)</script>", page.text)
+
+            js = re.search("window.__HYDRATION_STATE__=(.*?)</script>", page.text)
 
             if js:
-                print("Js")
+                logging.info("Js analysis started")
+
                 js = json.loads(js.group(1))
+                js = json.loads(js)
 
-                # with open('stores_t.json', 'w') as file:
-                    # json.dump(js,file)
+                with open('stores_t.json', 'w') as file:
+                    json.dump(js,file)
+            
+                # senas
+                # country_code = js["productViewModel"]["shippingInformations"]["details"]["default"]["countryCode"]
 
-                country_code = js["productViewModel"]["shippingInformations"]["details"]["default"]["countryCode"]
+                country_code = js["initialStates"]["slice-product"]["productViewModel"]["shippingInformations"]["details"]["default"]["countryCode"]
 
-                sizes = js["productViewModel"]["sizes"]
+                sizes = js["initialStates"]["slice-product"]["productViewModel"]["sizes"]
 
                 # with open('sizes.json', 'w') as outfile:
                     # json.dump(sizes, outfile)
@@ -54,10 +61,10 @@ class StoreInformation:
 
                     self.write_store_information()
 
-                # quantity = 
+                logging.info("Js analysis is done")
 
             else:
-                print("No js")
+                logging.info("Js was not found on this page")
 
         return {"country_id": country_code, "sizes":sizes}
 
@@ -74,5 +81,5 @@ class StoreInformation:
             json.dump(self.stores,file)
 
 if __name__ == "__main__":
-    storeInformation = StoreInformation()
-    storeInformation.get_store_location(123, "https://www.farfetch.com/uk/shopping/men/tommy-hilfiger-stripe-detail-sneakers-item-16461341.aspx?q=16461341")
+    storeInformation = StoreInformation(True)
+    storeInformation.get_information(123, "https://www.farfetch.com/uk/shopping/men/tommy-hilfiger-stripe-detail-sneakers-item-16461341.aspx?q=16461341")

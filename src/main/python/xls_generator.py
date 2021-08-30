@@ -3,8 +3,9 @@ import json
 from io import BytesIO
 from urllib.request import urlopen
 from PIL import Image
+import logging
 
-def export_products_to_xlsx(product_info, file_path_name, add_images):
+def export_products_to_xlsx(product_info, file_path_name, add_images, stores):
     # Create a workbook and add a worksheet.
 
     workbook = xlsxwriter.Workbook('{}.xlsx'.format(file_path_name))
@@ -17,7 +18,7 @@ def export_products_to_xlsx(product_info, file_path_name, add_images):
     money = workbook.add_format({'num_format': '$#,##0'})
 
     # Write some data headers.
-    headers = ['Pav.','Sku','FF prekės ID','Statusas','StoreId','Kaina','Savikaina','Valiuta','NAV kolekcija','FF kolekcija','Galutinis likutis','FF pradinė kaina','FF nuolaida','Pardavimo kaina','Šalis','Url']
+    headers = ['Pav.','Sku','FF prekės ID','Statusas','StoreId','Kaina','Savikaina','Valiuta','NAV kolekcija','FF kolekcija','Galutinis likutis','FF pradinė kaina','FF nuolaida','Pardavimo kaina','Šalis','Url','Konkurentų kiekis','Pard. proc.','MarkUP']
 
     for index,header in enumerate(headers):
         worksheet.write(0, index, header, bold)
@@ -34,6 +35,16 @@ def export_products_to_xlsx(product_info, file_path_name, add_images):
             country_id = product["country_id"]
         else:
             country_id = ""
+
+        try:
+            print(product["price"])
+            print(product["lowest_price"])
+            markup = round(float(product["price"])/float(product["lowest_price"]), 2)
+        except:
+            markup = ""
+            print("Error")
+
+        print("Markup", markup)
 
         if add_images and product["image"]:
             image = Image.open(BytesIO(urlopen(product["image"]).read()))
@@ -60,8 +71,18 @@ def export_products_to_xlsx(product_info, file_path_name, add_images):
 
         worksheet.write(row, 14, country_id)
         worksheet.write(row, 15, product["url"], cell_format)
-        row += 1
 
+        total_competitors_quantity = 0
+        if "sizes" in product and "available" in product["sizes"]:
+            for size in product["sizes"]["available"].values():
+                if str(size["storeId"]) not in stores:
+                    total_competitors_quantity += size["quantity"]
+
+        worksheet.write(row, 16, total_competitors_quantity, cell_format)
+        worksheet.write(row, 17, product["pard_proc"], cell_format)
+        worksheet.write(row, 18, markup, cell_format)
+
+        row += 1
 
     statistics_start_from = len(headers)
     worksheet.write(0, statistics_start_from, 'Statistika', bold)
@@ -78,10 +99,10 @@ def export_products_to_xlsx(product_info, file_path_name, add_images):
     worksheet.set_column(0, 0, 15)
     worksheet.set_column(1, 1, 30)
     worksheet.set_column(2, len(headers)+5, 15)
-    
+
     workbook.close()
 
-def export_product_sizes_to_xlsx(product_info,file_path_name,stores):
+def export_product_sizes_to_xlsx(product_info, file_path_name, stores):
     # get the sizes that are possible
     sizes = set()
     products_with_sizes = {}
@@ -94,8 +115,6 @@ def export_product_sizes_to_xlsx(product_info,file_path_name,stores):
 
     sizes = sorted(list(sizes))
     sizes_index_map = dict((e,i) for (i,e) in enumerate(sizes))
-
-    print(sizes_index_map)
 
     # Create a workbook and add a worksheet.
     workbook = xlsxwriter.Workbook('{}.xlsx'.format(file_path_name))
@@ -165,6 +184,7 @@ def export_product_sizes_to_xlsx(product_info,file_path_name,stores):
 
 if __name__ == "__main__":
     with open("results.json") as f:
-        export_product_sizes_to_xlsx(json.load(f), "rezultatai", {"13040":"TOPS Latvia"})
+        # export_product_sizes_to_xlsx(json.load(f), "rezultatai", {"13040":"TOPS Latvia"})
+        export_products_to_xlsx(json.load(f), "rezultatai", False, {"13040":"TOPS Latvia"})
 
     

@@ -196,7 +196,7 @@ class Scrapper():
             with open('total_pages.json', 'w') as outfile:
                 json.dump(api.get_listings(), outfile)
 
-            print("Total pages:", total_pages)
+            # print("Total pages:", total_pages)
 
             for page in range(1, total_pages+1):
                 # print("Scrapping page: ",page)
@@ -207,8 +207,8 @@ class Scrapper():
                 # update progress bar in gui
                 self.progress_bar_update_func(index*total_progress_bar_persentage_for_category + int((page * total_progress_bar_persentage_for_category) / total_pages))
 
-                print("     Product count:", len(products)) 
-                print("     Progress:", index*total_progress_bar_persentage_for_category + int((page * total_progress_bar_persentage_for_category) / total_pages))
+                # print("     Product count:", len(products))
+                # print("     Progress:", index*total_progress_bar_persentage_for_category + int((page * total_progress_bar_persentage_for_category) / total_pages))
 
                 for product in products:
                     # print(product)
@@ -244,7 +244,7 @@ class Scrapper():
                             self.product_to_ff_status_map[item_id]["image"] = product["images"]["cutOut"]
 
         
-        print("Total products filtered by child id {}".format(from_the_child_counter))
+        # print("Total products filtered by child id {}".format(from_the_child_counter))
 
     def get_category_ids_to_scrape(self):
         return self.categories_to_scrape
@@ -253,16 +253,16 @@ class Scrapper():
         # prideti cia reiksmes is mygtuku
         self.load_data_from_files()
 
-        print(self.main_table_save_path)
-        print(self.quantity_table_save_path)
+        # print(self.main_table_save_path)
+        # print(self.quantity_table_save_path)
 
         start = time.time()
 
         self.scrape_with_facet_exploit()
 
-        print("Total scrapping time: ", (time.time() - start))
+        # print("Total scrapping time: ", (time.time() - start))
 
-        print(self.product_to_ff_status_map)
+        # print(self.product_to_ff_status_map)
 
         with open('results.json', 'w') as outfile:
             json.dump(self.product_to_ff_status_map, outfile)

@@ -33,6 +33,7 @@ class Worker(QObject):
     finished = pyqtSignal()
     progress = pyqtSignal(int)
     warningText = pyqtSignal(str)
+    enableButton = pyqtSignal(bool)
 
     def __init__(self, scrapper, message_function, app):
         super().__init__()
@@ -43,6 +44,7 @@ class Worker(QObject):
     def run(self):
         try:
             self.scrapper.scrape()
+            self.enableButton.emit(True)
         except:
             logging.error("Klaida:" + str(sys.exc_info()))
             self.app.analise.setEnabled(True)
@@ -106,13 +108,13 @@ class App(QWidget):
                                                         "category_id": "135977"}
 
         self.scrape_breadth_options["baby_girls_shoes"] = {"checkbox": QCheckBox("Baby Girls avalynė"),
-                                                           "category_id": "136656"}
+                                                           "category_id": "136657"}
         self.scrape_breadth_options["baby_girls_clothing"] = {"checkbox": QCheckBox("Baby Girls rūbai"),
-                                                              "category_id": "136657"}
+                                                              "category_id": "136656"}
         self.scrape_breadth_options["baby_boys_shoes"] = {"checkbox": QCheckBox("Baby Boys avalynė"),
-                                                          "category_id": "136653"}
+                                                          "category_id": "136654"}
         self.scrape_breadth_options["baby_boys_clothing"] = {"checkbox": QCheckBox("Baby Boys rūbai"),
-                                                             "category_id": "136654"}
+                                                             "category_id": "136653"}
 
         self.scrape_breadth_options["kids_girls_shoes"] = {"checkbox": QCheckBox("Kids Girls avalynė"),
                                                            "category_id": "136651"}
@@ -300,7 +302,6 @@ class App(QWidget):
         response = QFileDialog.getOpenFileName(
             parent=self,
             caption='Pasirinkite reikiamą lentelę',
-            directory=os.getcwd(),
             filter=file_filter,
             initialFilter='Excel File (*.xlsx *.xls)'
         )
@@ -321,33 +322,33 @@ class App(QWidget):
             return fileName
 
     def scrape(self):
-        # if not self.store_ids_table:
-        #     self.displayMessage("Error", "Pasirinkite parduotuvių lentelę")
-        #     return
+        if not self.store_ids_table:
+            self.displayMessage("Error", "Pasirinkite parduotuvių lentelę")
+            return
 
-        # if not self.products_from_ff_table:
-        #     self.displayMessage("Error", "Pasirinkite FF produktų lentelę")
-        #     return
+        if not self.products_from_ff_table:
+            self.displayMessage("Error", "Pasirinkite FF produktų lentelę")
+            return
 
-        # if not self.products_table:
-        #     self.displayMessage("Error", "Pasirinkite produktų lentelę")
-        #     return
+        if not self.products_table:
+            self.displayMessage("Error", "Pasirinkite produktų lentelę")
+            return
 
-        # if not self.price_table:
-        #     self.displayMessage("Error", "Pasirinkite kainodaros lentelę")
-        #     return
+        if not self.price_table:
+            self.displayMessage("Error", "Pasirinkite kainodaros lentelę")
+            return
 
-        # if not self.ff_price_table:
-        #     self.displayMessage("Error", "Pasirinkite FF kainodaros lentelę")
-        #     return
+        if not self.ff_price_table:
+            self.displayMessage("Error", "Pasirinkite FF kainodaros lentelę")
+            return
 
-        # if not self.main_table_save_path:
-        #     self.displayMessage("Error", "Pasirinkite rezultatų lentelę")
-        #     return
+        if not self.main_table_save_path:
+            self.displayMessage("Error", "Pasirinkite rezultatų lentelę")
+            return
 
-        # if not self.quantity_table_save_path and self.extra_options["check_quantity"].isChecked():
-        #     self.displayMessage("Error", "Pasirinkite likučių rezultatų lentelę")
-        #     return
+        if not self.quantity_table_save_path and self.extra_options["check_quantity"].isChecked():
+            self.displayMessage("Error", "Pasirinkite likučių rezultatų lentelę")
+            return
 
         logging.info("Start")
         logging.info("Store ids table: %s", self.store_ids_table)
@@ -375,8 +376,6 @@ class App(QWidget):
                             self.region_select_combo_box.currentText(),
                             self.updateProgressBar)
 
-        # stop all threads
-
         self.thread = QThread(parent=self)
         self.worker = Worker(scrapper, self.displayMessage, self)
         self.worker.moveToThread(self.thread)
@@ -384,20 +383,22 @@ class App(QWidget):
         self.worker.finished.connect(self.thread.quit)
         self.worker.finished.connect(self.worker.deleteLater)
         self.worker.warningText.connect(self._handleWarningText)
+        self.worker.enableButton.connect(self._handleEnableButton)
         self.thread.finished.connect(self.thread.deleteLater)
         self.thread.start()
 
         # Final resets
         self.analise.setEnabled(False)
-        self.thread.finished.connect(
-            lambda: self.analise.setEnabled(True)
-        )
+
         self.thread.finished.connect(
             lambda: self.stepLabel.setText("Long-Running Step: 0")
         )
 
     def _handleWarningText(self, message):
         self.displayMessage("Error", message)
+
+    def _handleEnableButton(self, enabled):
+        self.analise.setEnabled(enabled)
 
     @pyqtSlot(str)
     def update_status(self, message):
@@ -408,28 +409,6 @@ class App(QWidget):
 
     def updateProgressBar(self, value):
         self.progress_bar.setValue(value)
-
-    # def openFileNameDialog(self):
-    #     options = QFileDialog.Options()
-    #     options |= QFileDialog.DontUseNativeDialog
-    #     fileName, _ = QFileDialog.getOpenFileName(self,"QFileDialog.getOpenFileName()", "","All Files (*);;Python Files (*.py)", options=options)
-    #     if fileName:
-    #         print(fileName)
-
-    # def openFileNamesDialog(self):
-    #     options = QFileDialog.Options()
-    #     options |= QFileDialog.DontUseNativeDialog
-    #     files, _ = QFileDialog.getOpenFileNames(self,"QFileDialog.getOpenFileNames()", "","All Files (*);;Python Files (*.py)", options=options)
-    #     if files:
-    #         print(files)
-
-    # def saveFileDialog(self):
-    #     options = QFileDialog.Options()
-    #     options |= QFileDialog.DontUseNativeDialog
-    #     fileName, _ = QFileDialog.getSaveFileName(self,"QFileDialog.getSaveFileName()","","All Files (*);;Text Files (*.txt)", options=options)
-    #     if fileName:
-    #         print(fileName)
-
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

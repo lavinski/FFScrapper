@@ -3,7 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="98139610-f802-4ea1-bf22-c2068472900b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lenteles/rez.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/lenteles/rez.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lenteles/rez2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/lenteles/rez2.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results.json" beforeDir="false" afterPath="$PROJECT_DIR$/results.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rezultatai.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/rezultatai.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stores.json" beforeDir="false" afterPath="$PROJECT_DIR$/stores.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stores_t.json" beforeDir="false" afterPath="$PROJECT_DIR$/stores_t.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/total_pages.json" beforeDir="false" afterPath="$PROJECT_DIR$/total_pages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xls_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/xls_generator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,16 +70,5 @@
       <updated>1630340204902</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>380</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

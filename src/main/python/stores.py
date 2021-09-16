@@ -49,19 +49,23 @@ class StoreInformation:
                 # senas
                 # country_code = js["productViewModel"]["shippingInformations"]["details"]["default"]["countryCode"]
 
-                country_code = js["initialStates"]["slice-product"]["productViewModel"]["shippingInformations"]["details"]["default"]["countryCode"]
+                if "initialStates" in js:
+                    country_code = js["initialStates"]["slice-product"]["productViewModel"]["shippingInformations"]["details"]["default"]["countryCode"]
 
-                sizes = js["initialStates"]["slice-product"]["productViewModel"]["sizes"]
+                    sizes = js["initialStates"]["slice-product"]["productViewModel"]["sizes"]
 
-                # with open('sizes.json', 'w') as outfile:
-                    # json.dump(sizes, outfile)
+                    # with open('sizes.json', 'w') as outfile:
+                        # json.dump(sizes, outfile)
 
-                if store_id not in self.stores:
-                    self.stores[store_id] = country_code
+                    if store_id not in self.stores:
+                        self.stores[store_id] = country_code
 
-                    self.write_store_information()
+                        self.write_store_information()
 
-                logging.info("Js analysis is done")
+                    logging.info("Js analysis is done")
+                else:
+                    logging.info("ERROR reading js - initialStates not set")
+                    country_code = "FF klaida"
 
             else:
                 logging.info("Js was not found on this page")

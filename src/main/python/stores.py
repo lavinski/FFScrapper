@@ -49,7 +49,7 @@ class StoreInformation:
                 # senas
                 # country_code = js["productViewModel"]["shippingInformations"]["details"]["default"]["countryCode"]
 
-                if "initialStates" in js:
+                if "initialStates" in js and "slice-product" in js["initialStates"] and "productViewModel" in js["initialStates"]["slice-product"]:
                     country_code = js["initialStates"]["slice-product"]["productViewModel"]["shippingInformations"]["details"]["default"]["countryCode"]
 
                     sizes = js["initialStates"]["slice-product"]["productViewModel"]["sizes"]

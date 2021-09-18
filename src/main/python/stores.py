@@ -26,8 +26,11 @@ class StoreInformation:
 
         else:
             # scrape the product page to determine the stores location
-            page = requests.get(product_page_url)
-            
+            try:
+                page = requests.get(product_page_url)
+            except Exception:
+                logging.error("Klaida nuskaitant duomenis is produkto puslapio: " + str(sys.exc_info()))
+
             # js = page.text.split("window['__initialState_slice-pdp__'] = ")
 
             # with open('response.html', 'w') as file:
@@ -64,7 +67,7 @@ class StoreInformation:
 
                     logging.info("Js analysis is done")
                 else:
-                    logging.info("ERROR reading js - initialStates not set")
+                    logging.error("ERROR reading js - initialStates not set")
                     country_code = "FF klaida"
 
             else:

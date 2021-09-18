@@ -135,7 +135,7 @@ class App(QWidget):
                                                               "category_id": "136988"}
 
         self.region_select_combo_box = QComboBox()
-        self.region_select_combo_box.addItems(["de", "ru", "lt", "pl", "uk", "lv", "ee"])
+        self.region_select_combo_box.addItems(["de", "ru", "lt", "pl", "uk", "lv", "ee", "it"])
 
         self.extra_options = {}
         self.extra_options["check_quantity"] = QCheckBox("Tikrinti likučius")

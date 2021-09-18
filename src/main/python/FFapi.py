@@ -19,7 +19,6 @@ class Api:
         self.gender = None
         self.pricetype = 'FullPrice'
         self.page = None
-        # self.params = '?view=%d&pagetype=%s&pricetype=%s&page=%d&c-category=%s'
         self.params = '?page=%d&c-category=%s'
 
         self.product_list = None
@@ -28,10 +27,7 @@ class Api:
         self.region = region
 
     def buildUrl(self):
-        self.parameters = self.params % (
-            # self.view,
-            # self.pagetype,
-            # self.pricetype,
+        self.parameters = self.params % (,
             self.page,
             self.c_category
         )
@@ -42,15 +38,18 @@ class Api:
 
     def get_listings(self, page=1):
         self.page = page
-        self.request = requests.get(self.buildUrl(), headers=self.headers)
-        self.response = self.request.json()
-        return self.response
+        try:
+            self.request = requests.get(self.buildUrl(), headers=self.headers)
+            self.response = self.request.json()
+            return self.response
+        except Exception:
+                logging.error("Klaida nuskaitant duomenis is ff API: " + str(sys.exc_info()))
+
+        return {}
 
     def parse_products(self, response):
-        if response['listingItems'] is not None and response['listingItems']['items'] is not None:
+        if response and response['listingItems'] is not None and response['listingItems']['items'] is not None:
             self.product_list = self.response['listingItems']['items']
             return self.product_list
-            # if len(self.df) == 0:
-            #     self.df = json_normalize(self.product_list)
-            # else:
-            #     self.df = pd.concat([self.df, json_normalize(self.product_list)])
+
+        return []

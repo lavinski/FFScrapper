@@ -4,6 +4,8 @@ import re
 import os 
 import os.path
 import logging
+import sys
+import time
 
 class StoreInformation:
     # mapping from store_id to location
@@ -26,10 +28,15 @@ class StoreInformation:
 
         else:
             # scrape the product page to determine the stores location
-            try:
-                page = requests.get(product_page_url)
-            except Exception:
-                logging.error("Klaida nuskaitant duomenis is produkto puslapio: " + str(sys.exc_info()))
+            for attempt_counter in range(1, 21):
+                try:
+                    page = requests.get(product_page_url)
+                    time.sleep(1)
+                    break
+                except:
+                    logging.error("Klaida nuskaitant duomenis is produkto puslapio: " + str(sys.exc_info()))
+                    logging.info("Bandymas nr.{}. Sistema bandys darkarta po 30s".format(attempt_counter))
+                    time.sleep(30)
 
             # js = page.text.split("window['__initialState_slice-pdp__'] = ")
 

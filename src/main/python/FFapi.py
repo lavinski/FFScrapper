@@ -2,6 +2,8 @@ import requests
 import pandas as pd
 from pandas.io.json import json_normalize
 import logging
+import sys
+import time
 
 class Api:
     def __init__(self, c_category = None, category = None, region = "de"):
@@ -27,7 +29,7 @@ class Api:
         self.region = region
 
     def buildUrl(self):
-        self.parameters = self.params % (,
+        self.parameters = self.params % (
             self.page,
             self.c_category
         )
@@ -38,14 +40,22 @@ class Api:
 
     def get_listings(self, page=1):
         self.page = page
-        try:
-            self.request = requests.get(self.buildUrl(), headers=self.headers)
-            self.response = self.request.json()
-            return self.response
-        except Exception:
-                logging.error("Klaida nuskaitant duomenis is ff API: " + str(sys.exc_info()))
 
-        return {}
+        for attempt_counter in range(1, 21):
+            try:
+                self.request = requests.get(self.buildUrl(), headers=self.headers)
+                self.response = self.request.json()
+                # not to get caught by FF
+                # if attempt_counter<5:
+                #     raise requests.exceptions.ConnectionError()
+                time.sleep(1)
+                return self.response
+            except:
+                logging.error("Klaida nuskaitant duomenis is ff API: " + str(sys.exc_info()))
+                logging.info("Bandymas nr.{}. Sistema bandys darkarta po 30s".format(attempt_counter))
+                time.sleep(30)
+
+        raise Exception("Klaida nuskaitant duomenis is ff API: " + str(sys.exc_info()))
 
     def parse_products(self, response):
         if response and response['listingItems'] is not None and response['listingItems']['items'] is not None:

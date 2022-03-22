@@ -30,7 +30,10 @@ class StoreInformation:
             # scrape the product page to determine the stores location
             for attempt_counter in range(1, 21):
                 try:
-                    page = requests.get(product_page_url)
+                    headers={
+                        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+                    }
+                    page = requests.get(product_page_url, headers=headers)
                     time.sleep(1)
                     break
                 except:
@@ -41,7 +44,7 @@ class StoreInformation:
             # js = page.text.split("window['__initialState_slice-pdp__'] = ")
 
             # with open('response.html', 'w') as file:
-                    # json.dump(page.text,file)
+            #         json.dump(page.text,file)
 
             # js = re.search("window\['__initialState_slice-pdp__'\] =(.*?)</script>", page.text)
 
@@ -59,22 +62,33 @@ class StoreInformation:
                 # senas
                 # country_code = js["productViewModel"]["shippingInformations"]["details"]["default"]["countryCode"]
 
-                if "initialStates" in js and "slice-product" in js["initialStates"] and "productViewModel" in js["initialStates"]["slice-product"]:
-                    country_code = js["initialStates"]["slice-product"]["productViewModel"]["shippingInformations"]["details"]["default"]["countryCode"]
+                if "apolloInitialState" in js and "ROOT_QUERY" in js["apolloInitialState"]:
+                    js = js["apolloInitialState"]["ROOT_QUERY"]
 
-                    sizes = js["initialStates"]["slice-product"]["productViewModel"]["sizes"]
+                    initialStates = None
+                    for key, obj in js.items():
+                        if key.startswith("initialStates"):
+                            initialStates = obj
 
-                    # with open('sizes.json', 'w') as outfile:
-                        # json.dump(sizes, outfile)
+                    if initialStates is not None and "data" in initialStates and "slice-product" in initialStates["data"] and "productViewModel" in initialStates["data"]["slice-product"]:
+                        country_code = initialStates["data"]["slice-product"]["productViewModel"]["shippingInformations"]["details"]["default"]["countryCode"]
 
-                    if store_id not in self.stores:
-                        self.stores[store_id] = country_code
+                        sizes = initialStates["data"]["slice-product"]["productViewModel"]["sizes"]
 
-                        self.write_store_information()
+                        # with open('sizes.json', 'w') as outfile:
+                            # json.dump(sizes, outfile)
 
-                    logging.info("Js analysis is done")
+                        if store_id not in self.stores:
+                            self.stores[store_id] = country_code
+
+                            self.write_store_information()
+
+                        logging.info("Js analysis is done")
+                    else:
+                        logging.error("ERROR reading js - initialStates not set")
+                        country_code = "FF klaida"
                 else:
-                    logging.error("ERROR reading js - initialStates not set")
+                    logging.error("apolloInitialState not set")
                     country_code = "FF klaida"
 
             else:
@@ -96,4 +110,4 @@ class StoreInformation:
 
 if __name__ == "__main__":
     storeInformation = StoreInformation(True)
-    storeInformation.get_information(123, "https://www.farfetch.com/uk/shopping/men/tommy-hilfiger-stripe-detail-sneakers-item-16461341.aspx?q=16461341")
+    storeInformation.get_information(123, "https://www.farfetch.com/de/shopping/men/versace-jeans-couture-sneakers-mit-regalia-baroque-print-item-17913496.aspx?storeid=13817")

@@ -124,12 +124,18 @@ class Scrapper():
             sheet = xls.parse(0)
 
             for index in sheet.index:
-                product_id = str(sheet["FF prekės ID"][index])
+                if numpy.isnan(sheet["FF prekės ID"][index]):
+                    sheet["FF prekės ID"][index] = numpy.nan_to_num(sheet["FF prekės ID"][index])
+
+                product_id = str(int(sheet["FF prekės ID"][index]))
+                print(product_id)
 
                 status = statuses["not_in_ff"]
                 if product_id in self.ff_child_to_parent_mapping:
                     product_id = self.ff_child_to_parent_mapping[product_id]
                     status = statuses["not_active"]
+
+                print(status)
 
                 
                 # add to the list only if exist in pricing table
@@ -277,6 +283,6 @@ def outputTest(message):
 
 if __name__ == "__main__":
     path_to_the_forlder = "/home/tomas/Projects/FFScannerWindows/src/main/python/lenteles"
-    scrapper = Scrapper(path_to_the_forlder+"/parduotuviu_lentele (2).xls",path_to_the_forlder+"/produktu_lentele (1).xls",path_to_the_forlder+'/FF likuciu_lentele.xls',path_to_the_forlder+"/kainodaros lentele (1).xls",path_to_the_forlder+"/FF kainodaros lentele.xls",path_to_the_forlder+"/rez.xls",path_to_the_forlder+"/rez2.xls",["136301"],progress_bar_update_func=outputTest,scrape_quantity=True)
+    scrapper = Scrapper(path_to_the_forlder+"/Parduotuvių lentelė.xls",path_to_the_forlder+"/Produktų lentelė.xls",path_to_the_forlder+'/FF produktų lentelė.xls',path_to_the_forlder+"/Kainodaros lentelė.xls",path_to_the_forlder+"/FF kainodara.xls",path_to_the_forlder+"/rez.xls",path_to_the_forlder+"/rez2.xls",["136301"],progress_bar_update_func=outputTest,scrape_quantity=True)
 
     scrapper.scrape()

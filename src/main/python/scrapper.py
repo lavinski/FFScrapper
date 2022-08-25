@@ -11,20 +11,26 @@ import xls_generator
 import csv
 import os.path
 import logging
+import time
 
 from stores import StoreInformation
+import product_page
 
 # GLOBAL VARIABLES
 statuses = {
     "not_active": "Neaktyvus",
     "active": "Aktyvus",
     "competitor_selling": "Konkurentu",
-    "not_in_ff": "Nenurodyta FF faile"
+    "not_in_ff": "Nenurodyta FF faile",
+    "active_found_with_sku": "Aktyvus (Surasta su SKU)",
+    "competitor_selling_found_with_sku": "Konkurentu (Surasta su SKU)",
 }
+
+CATEGORY_TOTAL_PERCENTAGE = 85
 
 class Scrapper():
 
-    def __init__(self,store_ids_table,products_table,products_from_ff_table,price_table,ff_price_table,main_table_save_path,quantity_table_save_path,categories_to_scrape=[],scrape_quantity=False,add_images=False,region="de",progress_bar_update_func = None):
+    def __init__(self,store_ids_table,products_table,products_from_ff_table,ff_price_table,main_table_save_path,quantity_table_save_path,categories_to_scrape=[],scrape_quantity=False,add_images=False,region="de",progress_bar_update_func = None):
         self.product_to_ff_status_map = {}
         self.store_ids = set()
         self.stores_to_name_mapping = {}
@@ -36,7 +42,6 @@ class Scrapper():
         self.products_from_ff_table = products_from_ff_table
         self.store_ids_table = store_ids_table
         self.products_table = products_table
-        self.price_table = price_table
         self.ff_price_table = ff_price_table
 
         self.categories_to_scrape = categories_to_scrape
@@ -66,40 +71,11 @@ class Scrapper():
                 self.stores_to_name_mapping[str(sheet["SiteId"][index])] = sheet["Store Name"][index]
         else:
             raise Exception("Netinkamas lenteles formatas", "Parduotuviu lentele {}".format(self.store_ids_table))
-
-        # open price table to get more info
-        product_sku_to_info = {}
-
-        extension = os.path.splitext(self.price_table)[1]
-        if extension == ".xls":
-            xls = pd.ExcelFile(self.price_table) 
-            sheet = xls.parse(0)
-
-            for index in sheet.index:
-                product_sku_to_info[sheet["Prekės Nr."][index]] = {
-                    "lowest_price": sheet["Vieneto savikaina"][index], 
-                    "nav_collection": sheet["Kolekcija"][index],
-                    "total_quantity": sheet["Galutinis likutis"][index],
-                    "pard_proc": sheet["Pard. Proc."][index]
-                }
-        else:
-            raise Exception("Netinkamas lenteles formatas", "Kainodaros lentele {}".format(self.price_table))
-            
+   
         # load ff file to determine if product ids that are in
         # product file are child or parentl
 
         extension = os.path.splitext(self.products_from_ff_table)[1]
-        # if extension[1] == ".csv":
-        #     with open(self.products_from_ff_table) as csvfile:
-        #         ff_data = csv.reader(csvfile,delimiter=";")
-        #         for row in ff_data:
-        #             # if child id exists
-        #             if row[1]:
-        #                 if row[1].isdigit():
-        #                     self.ff_child_to_parent_mapping[str(row[1])] = str(row[0])
-        #             else:
-        #                 self.ff_child_to_parent_mapping[str(row[0])] = str(row[0])
-        # el
         if extension == ".xls":
             # load product ids
             xls = pd.ExcelFile(self.products_from_ff_table) 
@@ -115,52 +91,50 @@ class Scrapper():
             
                 self.ff_child_to_parent_mapping[str(int(item_id))] = str(int(item_id))
         else:
-            raise Exception("Netinkamas lenteles formatas", "FF produktu lentele")
+            raise Exception("Netinkamas lenteles formatas", "FF produktu lentele")         
 
-        # load product ids
-        extension = os.path.splitext(self.price_table)[1]
+        extension = os.path.splitext(self.products_table)[1]
         if extension == ".xls":
             xls = pd.ExcelFile(self.products_table) 
-            sheet = xls.parse(0)
+            product_table_sheet = xls.parse(0)
 
-            for index in sheet.index:
-                if numpy.isnan(sheet["FF prekės ID"][index]):
-                    sheet["FF prekės ID"][index] = numpy.nan_to_num(sheet["FF prekės ID"][index])
+            for index in product_table_sheet.index:
+                if numpy.isnan(product_table_sheet["FF prekės iD"][index]):
+                    product_table_sheet["FF prekės iD"][index] = numpy.nan_to_num(product_table_sheet["FF prekės iD"][index])
 
-                product_id = str(int(sheet["FF prekės ID"][index]))
-                print(product_id)
+                product_id = str(int(product_table_sheet["FF prekės iD"][index]))
 
                 status = statuses["not_in_ff"]
                 if product_id in self.ff_child_to_parent_mapping:
                     product_id = self.ff_child_to_parent_mapping[product_id]
                     status = statuses["not_active"]
-
-                print(status)
-
                 
-                # add to the list only if exist in pricing table
-                if sheet["Nr."][index] in product_sku_to_info: 
-                    product_info = {
-                            "sku": str(sheet["Nr."][index]),
-                            "lowest_price": str(product_sku_to_info[sheet["Nr."][index]]["lowest_price"]),
-                            "image": "",
-                            "status": status,
-                            "store_id": "",
-                            "nav_collection": str(product_sku_to_info[sheet["Nr."][index]]["nav_collection"]),
-                            "total_quantity": str(product_sku_to_info[sheet["Nr."][index]]["total_quantity"]),
-                            "pard_proc": str(product_sku_to_info[sheet["Nr."][index]]["pard_proc"]),
-                            "url": "",
-                            "price": "",
-                            "currency": "",
-                            "sizes": {},
-                            "ff_base_price": "Nenurodyta",
-                            "ff_season": "Nenurodyta",
-                            "ff_base_discount": "Nenurodyta",
-                            "ff_sale_price": "Nenurodyta",
-                            "country_id": ""
-                    }
+                # Galutiniu likucio laukas gali tureti data. Pvz "Galutinis likutis 2022-07-03"
+                # Tad mum reikia gauti lauko pavadinima kuris prasidedad Galutinis likutis
+                total_quantity_key_name = next(key for key in product_table_sheet if key.startswith('Galutinis likutis'))
 
-                    self.product_to_ff_status_map[product_id] = product_info
+                # add to the list only if exist in pricing table
+                product_info = {
+                        "sku": str(product_table_sheet["Prekės nr."][index]),
+                        "lowest_price": str(product_table_sheet["Vieneto savikaina"][index]),
+                        "image": "",
+                        "status": status,
+                        "store_id": "",
+                        "nav_collection": str(product_table_sheet["Kolekcija"][index]),
+                        "total_quantity": str(product_table_sheet[total_quantity_key_name][index]),
+                        "pard_proc": str(product_table_sheet["Pard. %"][index]),
+                        "url": "",
+                        "price": "",
+                        "currency": "",
+                        "sizes": {},
+                        "ff_base_price": "Nenurodyta",
+                        "ff_season": "Nenurodyta",
+                        "ff_base_discount": "Nenurodyta",
+                        "ff_sale_price": "Nenurodyta",
+                        "country_id": ""
+                }
+
+                self.product_to_ff_status_map[product_id] = product_info
         else:
             raise Exception("Netinkamas lenteles formatas", "Produktu lentele")
 
@@ -193,7 +167,7 @@ class Scrapper():
         # scrape just womens and mens shoes
         from_the_child_counter = 0
 
-        total_progress_bar_persentage_for_category = int(95 / len(self.get_category_ids_to_scrape()))
+        total_progress_bar_persentage_for_category = int(CATEGORY_TOTAL_PERCENTAGE / len(self.get_category_ids_to_scrape()))
 
         for index,c in enumerate(self.get_category_ids_to_scrape()):
             api = Api(c_category=c,region=self.region)
@@ -253,6 +227,34 @@ class Scrapper():
         
         logging.info("Total products filtered by child id {}".format(from_the_child_counter))
 
+    def scrape_with_search_exploit(self):
+        # some products are not found in FF files (status=not_found_in_ff) and thus could not be found in facets 
+        # there is a workaround for this that call search url dirrectly
+        # search endpoint should return url to product page
+        total_progress_bar_persentage_for_product = int(10 / len(self.product_to_ff_status_map.items()))
+
+        for index, (product_id, product) in enumerate(self.product_to_ff_status_map.items()):
+            # update progress bar in gui
+            self.progress_bar_update_func(index*total_progress_bar_persentage_for_product + CATEGORY_TOTAL_PERCENTAGE)
+
+
+            if product["status"] == statuses["not_in_ff"] or product["status"] == statuses["not_active"]:
+                price, quantity, is_not_competitors = product_page.get_product_information(
+                    product["sku"]
+                )
+
+                product['status'] = statuses['active_found_with_sku'] if is_not_competitors else statuses['competitor_selling_found_with_sku']
+
+                if price:
+                    product['price'] = price
+
+                if quantity:
+                    product['quantity'] = quantity
+
+                time.sleep(1)
+
+
+    
     def get_category_ids_to_scrape(self):
         return self.categories_to_scrape
 
@@ -266,6 +268,10 @@ class Scrapper():
         start = time.time()
 
         self.scrape_with_facet_exploit()
+
+        logging.info("Tikrinami neaktyviu produktu puslapiai...")
+
+        self.scrape_with_search_exploit()
 
         logging.info("Total scrapping time: {}".format(time.time() - start))
 

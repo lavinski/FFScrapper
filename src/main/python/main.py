@@ -80,7 +80,6 @@ class App(QWidget):
         self.products_from_ff_table = ""
         self.store_ids_table = ""
         self.products_table = ""
-        self.price_table = ""
         self.ff_price_table = ""
 
         self.main_table_save_path = ""
@@ -111,28 +110,40 @@ class App(QWidget):
                                                            "category_id": "136657"}
         self.scrape_breadth_options["baby_girls_clothing"] = {"checkbox": QCheckBox("Baby Girls rūbai"),
                                                               "category_id": "136656"}
+        self.scrape_breadth_options["baby_girls_accesories"] = {"checkbox": QCheckBox("Baby Girls aksesuarai"),
+                                                              "category_id": "136658"}
         self.scrape_breadth_options["baby_boys_shoes"] = {"checkbox": QCheckBox("Baby Boys avalynė"),
                                                           "category_id": "136654"}
         self.scrape_breadth_options["baby_boys_clothing"] = {"checkbox": QCheckBox("Baby Boys rūbai"),
                                                              "category_id": "136653"}
+        self.scrape_breadth_options["baby_boys_accesories"] = {"checkbox": QCheckBox("Baby Boys aksesuarai"),
+                                                              "category_id": "136655"}
 
         self.scrape_breadth_options["kids_girls_shoes"] = {"checkbox": QCheckBox("Kids Girls avalynė"),
                                                            "category_id": "136651"}
         self.scrape_breadth_options["kids_girls_clothing"] = {"checkbox": QCheckBox("Kids Girls rūbai"),
                                                               "category_id": "136650"}
+        self.scrape_breadth_options["kids_girls_accesories"] = {"checkbox": QCheckBox("Kids Girls aksesuarai"),
+                                                              "category_id": "136652"}
         self.scrape_breadth_options["kids_boys_shoes"] = {"checkbox": QCheckBox("Kids Boys avalynė"),
                                                           "category_id": "136648"}
         self.scrape_breadth_options["kids_boys_clothing"] = {"checkbox": QCheckBox("Kids Boys rūbai"),
                                                              "category_id": "136647"}
+        self.scrape_breadth_options["kids_boys_accesories"] = {"checkbox": QCheckBox("Kids Boys aksesuarai"),
+                                                              "category_id": "136649"}
 
         self.scrape_breadth_options["teens_girls_shoes"] = {"checkbox": QCheckBox("Teens Girls avalynė"),
                                                             "category_id": "136993"}
         self.scrape_breadth_options["teens_girls_clothing"] = {"checkbox": QCheckBox("Teens Girls rūbai"),
                                                                "category_id": "136991"}
+        self.scrape_breadth_options["teens_girls_accesories"] = {"checkbox": QCheckBox("Teens Girls aksesuarai"),
+                                                            "category_id": "136992"}
         self.scrape_breadth_options["teens_boys_shoes"] = {"checkbox": QCheckBox("Teens Boys avalynė"),
                                                            "category_id": "136990"}
         self.scrape_breadth_options["teens_boys_clothing"] = {"checkbox": QCheckBox("Teens Boys rūbai"),
                                                               "category_id": "136988"}
+        self.scrape_breadth_options["teens_boys_accesories"] = {"checkbox": QCheckBox("Teens Boys aksesuarai"),
+                                                              "category_id": "136989"}
 
         self.region_select_combo_box = QComboBox()
         self.region_select_combo_box.addItems(["de", "ru", "lt", "pl", "uk", "lv", "ee", "it"])
@@ -181,11 +192,6 @@ class App(QWidget):
         # Producs
         btn = QPushButton('Produktų lentelė')
         btn.clicked.connect(self.getFileForProducts)
-        fileSelectLayout.addWidget(btn)
-
-        # Producs
-        btn = QPushButton('Kainodaros lentelė')
-        btn.clicked.connect(self.getFileForPrice)
         fileSelectLayout.addWidget(btn)
 
         # FF Price
@@ -291,9 +297,6 @@ class App(QWidget):
     def getFileForProducts(self):
         self.products_table = self.getFileName()
 
-    def getFileForPrice(self):
-        self.price_table = self.getFileName()
-
     def getFileForFFPrice(self):
         self.ff_price_table = self.getFileName()
 
@@ -334,10 +337,6 @@ class App(QWidget):
             self.displayMessage("Error", "Pasirinkite produktų lentelę")
             return
 
-        if not self.price_table:
-            self.displayMessage("Error", "Pasirinkite kainodaros lentelę")
-            return
-
         if not self.ff_price_table:
             self.displayMessage("Error", "Pasirinkite FF kainodaros lentelę")
             return
@@ -354,7 +353,7 @@ class App(QWidget):
         logging.info("Store ids table: %s", self.store_ids_table)
         logging.info("Products from ff table: %s", self.products_from_ff_table)
         logging.info("Products table: %s", self.products_table)
-        logging.info("Price table: %s", self.price_table)
+        # logging.info("Price table: %s", self.price_table)
         logging.info("Rez table: %s", self.main_table_save_path)
         logging.info("Quantity rez table: %s", self.quantity_table_save_path)
         logging.info("Check quantity: %s", self.extra_options["check_quantity"].isChecked())
@@ -366,7 +365,6 @@ class App(QWidget):
         scrapper = Scrapper(self.store_ids_table,
                             self.products_table,
                             self.products_from_ff_table,
-                            self.price_table,
                             self.ff_price_table,
                             self.main_table_save_path,
                             self.quantity_table_save_path,

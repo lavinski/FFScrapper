@@ -17,6 +17,7 @@ class StoreInformation:
         self.is_quantity_needed = is_quantity_needed
 
     def get_information(self, store_id, product_page_url):
+        # refactor this to not use duplicate code that is also in product_page.py
         country_code = ""
         sizes = {}
         store_id = str(store_id)

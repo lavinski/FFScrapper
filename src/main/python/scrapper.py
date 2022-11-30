@@ -30,7 +30,7 @@ CATEGORY_TOTAL_PERCENTAGE = 85
 
 class Scrapper():
 
-    def __init__(self,store_ids_table,products_table,products_from_ff_table,ff_price_table,main_table_save_path,quantity_table_save_path,categories_to_scrape=[],scrape_quantity=False,add_images=False,region="de",progress_bar_update_func = None):
+    def __init__(self,store_ids_table,products_table,products_from_ff_table,ff_price_table,main_table_save_path,quantity_table_save_path,categories_to_scrape=[],scrape_quantity=False,add_images=False,region="de",progress_bar_update_func = None, designer_id=None):
         self.product_to_ff_status_map = {}
         self.store_ids = set()
         self.stores_to_name_mapping = {}
@@ -43,6 +43,7 @@ class Scrapper():
         self.store_ids_table = store_ids_table
         self.products_table = products_table
         self.ff_price_table = ff_price_table
+        self.designer_id = designer_id
 
         self.categories_to_scrape = categories_to_scrape
 
@@ -170,13 +171,10 @@ class Scrapper():
         total_progress_bar_persentage_for_category = int(CATEGORY_TOTAL_PERCENTAGE / len(self.get_category_ids_to_scrape()))
 
         for index,c in enumerate(self.get_category_ids_to_scrape()):
-            api = Api(c_category=c,region=self.region)
+            api = Api(c_category=c,region=self.region, designer_id=self.designer_id)
 
             data = api.get_listings()
             total_pages = data['listingPagination']['totalPages']
-
-            # with open('total_pages.json', 'w') as outfile:
-            #     json.dump(data, outfile)
 
             logging.info("Total pages: {}".format(total_pages))
 
@@ -192,7 +190,6 @@ class Scrapper():
                 logging.info("     Progress: {}".format(index*total_progress_bar_persentage_for_category + int((page * total_progress_bar_persentage_for_category) / total_pages)))
 
                 for product in products:
-                    # logging.info(product)
                     if "merchantId" in product and "id" in product:
                         store_id = product["merchantId"]
                         item_id = str(product["id"])
@@ -251,12 +248,12 @@ class Scrapper():
                 if quantity:
                     product['quantity'] = quantity
 
-                time.sleep(1)
+                time.sleep(5)
 
 
     
     def get_category_ids_to_scrape(self):
-        return self.categories_to_scrape
+        return self.categories_to_scrape if self.categories_to_scrape else [None]
 
     def scrape(self):
         # prideti cia reiksmes is mygtuku

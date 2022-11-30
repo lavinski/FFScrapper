@@ -28,6 +28,7 @@ class StoreInformation:
             country_code = self.stores[store_id]
 
         else:
+            return {"country_id": country_code, "sizes":sizes}
             # scrape the product page to determine the stores location
             for attempt_counter in range(1, 21):
                 try:

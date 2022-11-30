@@ -24,7 +24,8 @@ from PyQt5.QtWidgets import (
     QLabel,
     QProgressBar,
     QMainWindow,
-    QPlainTextEdit
+    QPlainTextEdit,
+    QLineEdit
 )
 
 logging.basicConfig(filename="debug.log", level=logging.DEBUG)
@@ -81,6 +82,7 @@ class App(QWidget):
         self.store_ids_table = ""
         self.products_table = ""
         self.ff_price_table = ""
+        self.designer_id = None
 
         self.main_table_save_path = ""
         self.quantity_table_save_path = ""
@@ -198,6 +200,10 @@ class App(QWidget):
         btn = QPushButton('FF kainodaros lentelė')
         btn.clicked.connect(self.getFileForFFPrice)
         fileSelectLayout.addWidget(btn)
+
+        e1 = QLineEdit()
+        fileSelectLayout.addWidget(e1)
+        self.designer_id = e1
 
         # --------- Create a layout for additional options
         groupbox = QGroupBox("Papildomi nustatymai")
@@ -372,7 +378,8 @@ class App(QWidget):
                             self.extra_options["check_quantity"].isChecked(),
                             self.extra_options["add_images"].isChecked(),
                             self.region_select_combo_box.currentText(),
-                            self.updateProgressBar)
+                            self.updateProgressBar,
+                            designer_id=self.designer_id.text())
 
         self.thread = QThread(parent=self)
         self.worker = Worker(scrapper, self.displayMessage, self)

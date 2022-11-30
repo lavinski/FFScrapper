@@ -6,7 +6,7 @@ import sys
 import time
 
 class Api:
-    def __init__(self, c_category = None, category = None, region = "de"):
+    def __init__(self, c_category = None, category = None, region = "de", designer_id = None):
         self.baseUrl = 'https://www.farfetch.com/'+region+'/plpslice/listing-api/products-facets'
         self.headers = {
             'Origin': 'https://www.farfetch.com'
@@ -22,6 +22,7 @@ class Api:
         self.pricetype = 'FullPrice'
         self.page = None
         self.params = '?page=%d&c-category=%s'
+        self.designer_id = designer_id
 
         self.product_list = None
         self.df = pd.DataFrame()
@@ -29,14 +30,17 @@ class Api:
         self.region = region
 
     def buildUrl(self):
-        self.parameters = self.params % (
-            self.page,
-            self.c_category
-        )
+        parameters = f"?page={self.page}"
 
-        logging.info("     url: %s", self.baseUrl + self.parameters)
+        if self.designer_id:
+            parameters = parameters + f"&designer={self.designer_id}"
+        
+        if self.c_category:
+            parameters = parameters + f"&c_category={self.c_category}"
 
-        return self.baseUrl + self.parameters
+        logging.info("     url: %s", self.baseUrl + parameters)
+
+        return self.baseUrl + parameters
 
     def get_listings(self, page=1):
         self.page = page
@@ -48,7 +52,7 @@ class Api:
                 # not to get caught by FF
                 # if attempt_counter<5:
                 #     raise requests.exceptions.ConnectionError()
-                time.sleep(1)
+                time.sleep(3)
                 return self.response
             except:
                 logging.error("Klaida nuskaitant duomenis is ff API: " + str(sys.exc_info()))

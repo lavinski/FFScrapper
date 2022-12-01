@@ -105,4 +105,4 @@ def get_product_information(sku):
 
 if __name__ == "__main__":
     # get_product_information("MKO40R5MKFA1B-150", {})
-    get_product_information("1224041STLRCNLAURELCANYON", {})
+    get_product_information("FRG0472615")

@@ -269,6 +269,12 @@ class Scrapper():
 
         self.scrape_with_facet_exploit()
 
+        logging.info("Rasomi pirmutiniai duomenys...")
+
+        # generate xls file
+        xls_generator.export_products_to_xlsx(self.product_to_ff_status_map, self.main_table_save_path, self.add_images, self.stores_to_name_mapping)
+        xls_generator.export_product_sizes_to_xlsx(self.product_to_ff_status_map, self.quantity_table_save_path, self.stores_to_name_mapping)
+
         logging.info("Tikrinami neaktyviu produktu puslapiai...")
 
         self.scrape_with_search_exploit()

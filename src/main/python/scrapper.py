@@ -275,18 +275,18 @@ class Scrapper():
         xls_generator.export_products_to_xlsx(self.product_to_ff_status_map, self.main_table_save_path, self.add_images, self.stores_to_name_mapping)
         xls_generator.export_product_sizes_to_xlsx(self.product_to_ff_status_map, self.quantity_table_save_path, self.stores_to_name_mapping)
 
-        logging.info("Tikrinami neaktyviu produktu puslapiai...")
+        # logging.info("Tikrinami neaktyviu produktu puslapiai...")
 
-        self.scrape_with_search_exploit()
+        # self.scrape_with_search_exploit()
 
-        logging.info("Total scrapping time: {}".format(time.time() - start))
+        # logging.info("Total scrapping time: {}".format(time.time() - start))
 
-        with open('results.json', 'w') as outfile:
-            json.dump(self.product_to_ff_status_map, outfile)
+        # with open('results.json', 'w') as outfile:
+        #     json.dump(self.product_to_ff_status_map, outfile)
 
-        # generate xls file
-        xls_generator.export_products_to_xlsx(self.product_to_ff_status_map, self.main_table_save_path, self.add_images, self.stores_to_name_mapping)
-        xls_generator.export_product_sizes_to_xlsx(self.product_to_ff_status_map, self.quantity_table_save_path, self.stores_to_name_mapping)
+        # # generate xls file
+        # xls_generator.export_products_to_xlsx(self.product_to_ff_status_map, self.main_table_save_path, self.add_images, self.stores_to_name_mapping)
+        # xls_generator.export_product_sizes_to_xlsx(self.product_to_ff_status_map, self.quantity_table_save_path, self.stores_to_name_mapping)
 
         self.progress_bar_update_func(100)
 

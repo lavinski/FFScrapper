@@ -234,19 +234,22 @@ class Scrapper():
             # update progress bar in gui
             self.progress_bar_update_func(index*total_progress_bar_persentage_for_product + CATEGORY_TOTAL_PERCENTAGE)
 
-
             if product["status"] == statuses["not_in_ff"] or product["status"] == statuses["not_active"]:
-                price, quantity, is_not_competitors = product_page.get_product_information(
-                    product["sku"]
-                )
+                
+                try:  
+                    price, quantity, is_not_competitors = product_page.get_product_information(
+                        product["sku"]
+                    )
+                    product['status'] = statuses['active_found_with_sku'] if is_not_competitors else statuses['competitor_selling_found_with_sku']
 
-                product['status'] = statuses['active_found_with_sku'] if is_not_competitors else statuses['competitor_selling_found_with_sku']
+                    if price:
+                        product['price'] = price
 
-                if price:
-                    product['price'] = price
+                    if quantity:
+                        product['quantity'] = quantity
 
-                if quantity:
-                    product['quantity'] = quantity
+                except:
+                    logging.error("Klaida nuskaitant duomenis is ff pagal SKU: " + str(sys.exc_info()))
 
                 time.sleep(5)
 

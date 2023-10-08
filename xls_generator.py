@@ -4,9 +4,33 @@ from io import BytesIO
 from urllib.request import urlopen
 from PIL import Image
 import logging
+import requests
+import sys
+
+REQUEST_HEADERS = {
+    "authority": "cdn-images.farfetch-contents.com",
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "accept-language": "en-GB,en-US;q=0.9,en;q=0.8,lt;q=0.7",
+    "cache-control": "max-age=0",
+    "sec-ch-ua": '"Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"',
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": '"macOS"',
+    "sec-fetch-dest": "document",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-site": "none",
+    "sec-fetch-user": "?1",
+    "upgrade-insecure-requests": "1",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
+}
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[logging.StreamHandler(sys.stdout)],
+)
 
 
-def export_products_to_xlsx(product_info, file_path_name, add_images, stores):
+def export_products_to_xlsx(product_info, file_path_name, add_images):
     # Create a workbook and add a worksheet.
     logging.info("Prasidejo produktu xlsx failo generavimas... (Tai gali uztrukti)")
     full_file_path = file_path_name
@@ -64,12 +88,19 @@ def export_products_to_xlsx(product_info, file_path_name, add_images, stores):
             markup = ""
 
         if add_images and product["image"]:
-            image = Image.open(BytesIO(urlopen(product["image"]).read()))
-            image = image.resize((100, 100))
-            bs = BytesIO()
-            image.save(bs, format="JPEG")
-            worksheet.insert_image(row, 0, product["image"], {"image_data": bs})
-            worksheet.set_row(row, 100)
+            url = product["image"]
+            response = requests.get(url, headers=REQUEST_HEADERS)
+            if response.status_code == 200:
+                image = Image.open(BytesIO(response.content))
+                image = image.resize((100, 100))
+                bs = BytesIO()
+                image.save(bs, format="JPEG")
+                worksheet.insert_image(row, 0, product["image"], {"image_data": bs})
+                worksheet.set_row(row, 100)
+            else:
+                logging.info(
+                    f"Nepavyko atsiusti produkto paveiksliuko {product['sku']}. Status code: {product['sku']}"
+                )
 
         worksheet.write(row, 1, product["sku"])
         worksheet.write(row, 2, product_id)

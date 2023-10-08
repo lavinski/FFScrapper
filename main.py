@@ -1,6 +1,8 @@
 import sys
 from PyQt6.QtCore import QObject, QThread, pyqtSignal, pyqtSlot
 import logging
+import traceback 
+
 
 from PyQt6.QtWidgets import (
     QApplication,
@@ -44,7 +46,8 @@ class Worker(QObject):
             self.enableButton.emit(True)
         except:
             logging.error("Klaida:" + str(sys.exc_info()))
-            self.app.analise.setEnabled(True)
+            traceback.print_exc() 
+            self.app.analyse.setEnabled(True)
             self.warningText.emit("Programoje įvyko klaida!")
 
 

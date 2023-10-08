@@ -51,7 +51,6 @@ class Scrapper:
     ):
         self.product_to_ff_status_map = {}
         self.store_ids = set()
-        self.stores_to_name_mapping = {}
 
         # key -> child_id
         # value -> parent_id
@@ -87,10 +86,6 @@ class Scrapper:
                 [int(site_id) for site_id in sheet["SiteId"] if not math.isnan(site_id)]
             )
 
-            for index in sheet.index:
-                self.stores_to_name_mapping[str(sheet["SiteId"][index])] = sheet[
-                    "Store Name"
-                ][index]
         else:
             raise Exception(
                 "Netinkamas lenteles formatas",
@@ -207,7 +202,6 @@ class Scrapper:
         if search_in_sale_page:
             start_progress_bar_at = 50
 
-        # scrape just womens and mens shoes
         from_the_child_counter = 0
 
         total_progress_bar_persentage_for_category = int(
@@ -302,11 +296,12 @@ class Scrapper:
         self.scrape_with_facet_exploit()
         self.scrape_with_facet_exploit(search_in_sale_page=True)
 
+        print(self.product_to_ff_status_map)
+
         xls_generator.export_products_to_xlsx(
             self.product_to_ff_status_map,
             self.main_table_save_path,
             self.add_images,
-            self.stores_to_name_mapping,
         )
 
         self.progress_bar_update_func(100)

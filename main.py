@@ -1,12 +1,6 @@
 import sys
-import os
-from PyQt6.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QFileDialog
-from PyQt6.QtGui import QIcon
 from PyQt6.QtCore import QObject, QThread, pyqtSignal, pyqtSlot
-from datetime import date
 import logging
-
-from scrapper import Scrapper
 
 from PyQt6.QtWidgets import (
     QApplication,
@@ -14,21 +8,20 @@ from PyQt6.QtWidgets import (
     QPushButton,
     QWidget,
     QVBoxLayout,
-    QFormLayout,
     QCheckBox,
-    QBoxLayout,
     QHBoxLayout,
     QMessageBox,
     QGroupBox,
     QComboBox,
     QLabel,
     QProgressBar,
-    QMainWindow,
     QPlainTextEdit,
     QLineEdit,
+    QFileDialog,
 )
 
 from ffscrapper.ui_options import generate_breadth_search_options
+from scrapper import Scrapper
 
 logging.basicConfig(filename="debug.log", level=logging.DEBUG)
 
@@ -173,7 +166,7 @@ class App(QWidget):
         outerUpperLayout.addWidget(self.analyse, 2, 0, 2, 3)
 
         return outerUpperLayout
-    
+
     def addLowerUIPortion(self):
         outerDownLayout = QGridLayout()
         outerDownLayout.addWidget(self.progress_bar)

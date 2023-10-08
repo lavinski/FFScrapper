@@ -1,2 +1,5 @@
-src/main/python/__pycache__/
-
+.vscode
+build/*
+dist/*
+.DS_Store
+__pycache__

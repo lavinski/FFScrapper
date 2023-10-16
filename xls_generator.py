@@ -48,6 +48,7 @@ def export_products_to_xlsx(product_info, file_path_name, add_images):
         "FOTO",
         "SKU",
         "FF prekės ID",
+        "Kategorija",
         "Statusas",
         "StoreId",
         "Kaina",
@@ -74,6 +75,12 @@ def export_products_to_xlsx(product_info, file_path_name, add_images):
 
     cell_format = workbook.add_format()
     cell_format.set_shrink()
+
+    percent_format = workbook.add_format({"num_format": "0.00%"})
+
+    custom_number_format = workbook.add_format()
+    custom_number_format.set_num_format("#,##0.00")
+    custom_number_format.set_shrink()
 
     # Iterate over the data and write it out row by row.
     for product_id, product in product_info.items():
@@ -102,24 +109,70 @@ def export_products_to_xlsx(product_info, file_path_name, add_images):
                     f"Nepavyko atsiusti produkto paveiksliuko {product['sku']}. Status code: {product['sku']}"
                 )
 
+        # transform 30.00% into float and then it will be formatted to number
+        ff_base_discount = str(product["ff_base_discount"]).replace("%", "")
+        if ff_base_discount != "":
+            ff_base_discount = float(ff_base_discount) / 100
+
         worksheet.write(row, 1, product["sku"])
         worksheet.write(row, 2, product_id)
-        worksheet.write(row, 3, product["status"])
-        worksheet.write(row, 4, product["store_id"])
-        worksheet.write(row, 5, product["price"])
-        worksheet.write(row, 6, product["lowest_price"])
-        worksheet.write(row, 7, markup, cell_format)
-        worksheet.write(row, 8, product["currency"])
-        worksheet.write(row, 9, product["nav_collection"])
-        worksheet.write(row, 10, product["ff_season"])
-        worksheet.write(row, 11, product["total_quantity"])
-        worksheet.write(row, 12, product["stock_total"], cell_format)
-        worksheet.write(row, 13, product["pard_proc"], cell_format)
-        worksheet.write(row, 14, product["ff_base_price"])
-        worksheet.write(row, 15, product["ff_base_discount"])
-        worksheet.write(row, 16, product["ff_sale_price"])
-        worksheet.write(row, 17, country_id)
-        worksheet.write(row, 18, product["url"], cell_format)
+        worksheet.write(row, 3, product["category"])
+        worksheet.write(row, 4, product["status"])
+        worksheet.write(row, 5, product["store_id"])
+        worksheet.write(
+            row,
+            6,
+            float(product["price"]) if product["price"] != "" else "",
+            custom_number_format,
+        )
+        worksheet.write(
+            row,
+            7,
+            float(product["lowest_price"]) if product["lowest_price"] != "" else "",
+            custom_number_format,
+        )
+        worksheet.write(row, 8, float(markup) if markup != "" else "", cell_format)
+        worksheet.write(row, 9, product["currency"])
+        worksheet.write(row, 10, product["nav_collection"])
+        worksheet.write(row, 11, product["ff_season"])
+        worksheet.write(
+            row,
+            12,
+            int(product["total_quantity"]) if product["total_quantity"] != "" else "",
+            custom_number_format,
+        )
+        worksheet.write(
+            row,
+            13,
+            int(product["stock_total"]) if product["stock_total"] != "" else "",
+            custom_number_format,
+        )
+        worksheet.write(
+            row,
+            14,
+            float(product["pard_proc"]) if product["pard_proc"] != "" else "",
+            percent_format,
+        )
+        worksheet.write(
+            row,
+            15,
+            float(product["ff_base_price"]) if product["ff_base_price"] != "" else "",
+            custom_number_format,
+        )
+        worksheet.write(
+            row,
+            16,
+            float(ff_base_discount) if ff_base_discount != "" else "",
+            percent_format,
+        )
+        worksheet.write(
+            row,
+            17,
+            float(product["ff_sale_price"]) if product["ff_sale_price"] != "" else "",
+            custom_number_format,
+        )
+        worksheet.write(row, 18, country_id)
+        worksheet.write(row, 19, product["url"], cell_format)
 
         row += 1
 
@@ -152,7 +205,6 @@ def export_products_to_xlsx(product_info, file_path_name, add_images):
 
 if __name__ == "__main__":
     with open("results.json") as f:
-        # export_product_sizes_to_xlsx(json.load(f), "rezultatai", {"13040":"TOPS Latvia"})
         export_products_to_xlsx(
             json.load(f), "rezultatai.xlsx", False, {"13040": "TOPS Latvia"}
         )

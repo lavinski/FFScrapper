@@ -1,21 +1,12 @@
+import xls_generator
+import logging
+import sys
+import copy
+
+from ffscrapper.data_loader import load_store_ids, load_ff_product_table, load_product_table, load_ff_price_product
 from FFapi import Api
 
-import json
-import pandas as pd
-import numpy
-import requests
-from bs4 import BeautifulSoup
-import math
-import time
-import xls_generator
-import csv
-import os.path
-import logging
-import time
-import sys
-
-# GLOBAL VARIABLES
-statuses = {
+STATUSES = {
     "not_active": "Neaktyvus",
     "active": "Aktyvus",
     "competitor_selling": "Konkurentu",
@@ -75,127 +66,11 @@ class Scrapper:
 
         self.progress_bar_update_func = progress_bar_update_func
 
-    def load_data_from_files(self):
-        # load the store_ids
-        extension = os.path.splitext(self.store_ids_table)[1]
-        if extension == ".xls":
-            xls = pd.ExcelFile(self.store_ids_table)
-            sheet = xls.parse(0)
-
-            self.store_ids = set(
-                [int(site_id) for site_id in sheet["SiteId"] if not math.isnan(site_id)]
-            )
-
-        else:
-            raise Exception(
-                "Netinkamas lenteles formatas",
-                "Parduotuviu lentele {}".format(self.store_ids_table),
-            )
-
-        extension = os.path.splitext(self.products_from_ff_table)[1]
-        if extension == ".xls":
-            # load product ids
-            xls = pd.ExcelFile(self.products_from_ff_table)
-            sheet = xls.parse(0)
-
-            for index in sheet.index:
-                # if child id exists
-                child_id = sheet["Child"][index]
-                item_id = sheet["Item id"][index]
-
-                if not pd.isnull(child_id):
-                    self.ff_child_to_parent_mapping[str(int(child_id))] = str(
-                        int(item_id)
-                    )
-
-                self.ff_child_to_parent_mapping[str(int(item_id))] = str(int(item_id))
-        else:
-            raise Exception("Netinkamas lenteles formatas", "FF produktu lentele")
-
-        extension = os.path.splitext(self.products_table)[1]
-        if extension == ".xls":
-            xls = pd.ExcelFile(self.products_table)
-            product_table_sheet = xls.parse(0)
-
-            for index in product_table_sheet.index:
-                if numpy.isnan(product_table_sheet["FF prekės iD"][index]):
-                    product_table_sheet["FF prekės iD"][index] = numpy.nan_to_num(
-                        product_table_sheet["FF prekės iD"][index]
-                    )
-
-                product_id = str(int(product_table_sheet["FF prekės iD"][index]))
-
-                status = statuses["not_in_ff"]
-                if product_id in self.ff_child_to_parent_mapping:
-                    product_id = self.ff_child_to_parent_mapping[product_id]
-                    status = statuses["not_active"]
-
-                # Galutiniu likucio laukas gali tureti data. Pvz "Galutinis likutis 2022-07-03"
-                # Tad mum reikia gauti lauko pavadinima kuris prasidedad Galutinis likutis
-                total_quantity_key_name = next(
-                    key
-                    for key in product_table_sheet
-                    if key.startswith("Galutinis likutis")
-                )
-
-                # add to the list only if exist in pricing table
-                product_info = {
-                    "sku": str(product_table_sheet["Prekės nr."][index]),
-                    "lowest_price": str(
-                        product_table_sheet["Vieneto savikaina"][index]
-                    ),
-                    "image": "",
-                    "status": status,
-                    "store_id": "",
-                    "nav_collection": str(product_table_sheet["Kolekcija"][index]),
-                    "total_quantity": str(
-                        product_table_sheet[total_quantity_key_name][index]
-                    ),
-                    "pard_proc": str(product_table_sheet["Pard. %"][index]),
-                    "url": "",
-                    "price": "",
-                    "currency": "",
-                    "sizes": {},
-                    "stock_total": 0,
-                    "ff_base_price": "Nenurodyta",
-                    "ff_season": "Nenurodyta",
-                    "ff_base_discount": "Nenurodyta",
-                    "ff_sale_price": "Nenurodyta",
-                    "country_id": "",
-                }
-
-                self.product_to_ff_status_map[product_id] = product_info
-        else:
-            raise Exception("Netinkamas lenteles formatas", "Produktu lentele")
-
-        extension = os.path.splitext(self.ff_price_table)[1]
-        if extension == ".xls":
-            xls = pd.ExcelFile(self.ff_price_table)
-            sheet = xls.parse(
-                0, converters={"Base Discount": lambda value: "{}%".format(value * 100)}
-            )
-
-            for index in sheet.index:
-                product_id = str(sheet["Item ID"][index])
-                if product_id in self.ff_child_to_parent_mapping:
-                    product_id = self.ff_child_to_parent_mapping[product_id]
-
-                if product_id in self.product_to_ff_status_map:
-                    self.product_to_ff_status_map[product_id]["ff_base_price"] = str(
-                        sheet["Base Price(ā‚¬)"][index]
-                    )
-                    self.product_to_ff_status_map[product_id]["ff_season"] = str(
-                        sheet["Season"][index]
-                    )
-                    self.product_to_ff_status_map[product_id]["ff_base_discount"] = str(
-                        sheet["Base Discount"][index]
-                    )
-                    self.product_to_ff_status_map[product_id]["ff_sale_price"] = str(
-                        sheet["Sale Price(ā‚¬)"][index]
-                    )
-
-        else:
-            raise Exception("Netinkamas lenteles formatas", "FF kainodaros lentele")
+    def load_data_from_files(self):        
+        self.store_ids = load_store_ids(self.store_ids_table)
+        self.ff_child_to_parent_mapping = load_ff_product_table(self.products_from_ff_table)
+        self.product_to_ff_status_map = load_product_table(self.products_table, STATUSES, self.ff_child_to_parent_mapping)
+        self.product_to_ff_status_map = load_ff_price_product(self.ff_price_table, self.ff_child_to_parent_mapping, copy.deepcopy(self.product_to_ff_status_map))
 
     def scrape_with_facet_exploit(self, search_in_sale_page=False):
         start_progress_bar_at = 0
@@ -256,9 +131,9 @@ class Scrapper:
                                 "https://www.farfetch.com/" + product["url"]
                             )
 
-                            status = statuses["competitor_selling"]
+                            status = STATUSES["competitor_selling"]
                             if store_id in self.store_ids:
-                                status = statuses["active"]
+                                status = STATUSES["active"]
 
                             self.product_to_ff_status_map[item_id]["status"] = status
                             self.product_to_ff_status_map[item_id][
@@ -295,8 +170,6 @@ class Scrapper:
 
         self.scrape_with_facet_exploit()
         self.scrape_with_facet_exploit(search_in_sale_page=True)
-
-        print(self.product_to_ff_status_map)
 
         xls_generator.export_products_to_xlsx(
             self.product_to_ff_status_map,

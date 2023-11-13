@@ -117,62 +117,63 @@ def export_products_to_xlsx(product_info, file_path_name, add_images):
         worksheet.write(row, 1, product["sku"])
         worksheet.write(row, 2, product_id)
         worksheet.write(row, 3, product["category"])
-        worksheet.write(row, 4, product["status"])
-        worksheet.write(row, 5, product["store_id"])
+        worksheet.write(row, 4, product["gender"])
+        worksheet.write(row, 5, product["status"])
+        worksheet.write(row, 6, product["store_id"])
         worksheet.write(
             row,
-            6,
+            7,
             float(product["price"]) if product["price"] != "" else "",
             custom_number_format,
         )
         worksheet.write(
             row,
-            7,
+            8,
             float(product["lowest_price"]) if product["lowest_price"] != "" else "",
             custom_number_format,
         )
-        worksheet.write(row, 8, float(markup) if markup != "" else "", cell_format)
-        worksheet.write(row, 9, product["currency"])
-        worksheet.write(row, 10, product["nav_collection"])
-        worksheet.write(row, 11, product["ff_season"])
+        worksheet.write(row, 9, float(markup) if markup != "" else "", cell_format)
+        worksheet.write(row, 10, product["currency"])
+        worksheet.write(row, 11, product["nav_collection"])
+        worksheet.write(row, 12, product["ff_season"])
         worksheet.write(
             row,
-            12,
+            13,
             int(product["total_quantity"]) if product["total_quantity"] != "" else "",
             custom_number_format,
         )
         worksheet.write(
             row,
-            13,
+            14,
             int(product["stock_total"]) if product["stock_total"] != "" else "",
             custom_number_format,
         )
         worksheet.write(
             row,
-            14,
+            15,
             float(product["pard_proc"]) if product["pard_proc"] != "" else "",
             percent_format,
         )
         worksheet.write(
             row,
-            15,
+            16,
             float(product["ff_base_price"]) if product["ff_base_price"] != "" else "",
             custom_number_format,
         )
         worksheet.write(
             row,
-            16,
+            17,
             float(ff_base_discount) if ff_base_discount != "" else "",
             percent_format,
         )
         worksheet.write(
             row,
-            17,
+            18,
             float(product["ff_sale_price"]) if product["ff_sale_price"] != "" else "",
             custom_number_format,
         )
-        worksheet.write(row, 18, country_id)
-        worksheet.write(row, 19, product["url"], cell_format)
+        worksheet.write(row, 19, country_id)
+        worksheet.write(row, 20, product["url"], cell_format)
 
         row += 1
 
@@ -181,17 +182,17 @@ def export_products_to_xlsx(product_info, file_path_name, add_images):
 
     worksheet.write(1, statistics_start_from, "Aktyvus:")
     worksheet.write(
-        1, statistics_start_from + 1, '=COUNTIFS(D2:B1048576,"Aktyvus")', None, ""
+        1, statistics_start_from + 1, '=COUNTIFS(F2:F1048576,"Aktyvus")', None, ""
     )
 
     worksheet.write(2, statistics_start_from, "Neaktyvus:")
     worksheet.write(
-        2, statistics_start_from + 1, '=COUNTIFS(D2:B1048576,"Neaktyvus")', None, ""
+        2, statistics_start_from + 1, '=COUNTIFS(F2:F1048576,"Neaktyvus")', None, ""
     )
 
     worksheet.write(3, statistics_start_from, "Konkurentu:")
     worksheet.write_formula(
-        3, statistics_start_from + 1, '=COUNTIFS(D2:B1048576,"Konkurentu")', None, ""
+        3, statistics_start_from + 1, '=COUNTIFS(F2:F1048576,"Konkurentu")', None, ""
     )
 
     worksheet.set_column(0, 0, 15)

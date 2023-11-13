@@ -155,5 +155,8 @@ def load_ff_price_product(ff_price_table, ff_child_to_parent_mapping, product_to
             product_to_ff_status_map[product_id]["category"] = str(
                 sheet["Category"][index]
             )
+            product_to_ff_status_map[product_id]["gender"] = str(
+                sheet["Gender"][index]
+            )
 
     return product_to_ff_status_map
